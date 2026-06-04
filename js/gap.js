@@ -309,8 +309,7 @@
 
     tbody.innerHTML = sortedData.map(d => {
       const rowId = `row-${d.name.replace(/[^a-z0-9]/gi, "-").toLowerCase()}`;
-      const isPlaceholder = d.type === "proposed" ||
-        (d.institution === "DBS" && d.name === "Computing (Data Analytics)");
+      const isPlaceholder = d.type === "proposed" || d.name === "Computing (Data Analytics)";
 
       const xBar = `
         <div class="score-bar">

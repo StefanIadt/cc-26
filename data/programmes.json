@@ -7,7 +7,7 @@
     "location": "Dublin",
     "cao_code": "TR033",
     "cao_points": 555,
-    "award": "BA (Moderatorship) \u2014 Honours Bachelor Degree",
+    "award": "BA (Moderatorship) — Honours Bachelor Degree",
     "nfq_level": 8,
     "stages": 4,
     "x": 10,
@@ -86,51 +86,91 @@
     "y": 2,
     "type": "university",
     "note": "",
-    "modules": [],
-    "modules_note": "Computer Science combined with Business, Economics, Geography or Linguistics \u2014 full module list at programme URL",
+    "modules": {
+      "note": "CS combined with Business, Economics, Geography or Linguistics. Full module list in programme handbook — see modules_note URL."
+    },
+    "modules_note": "Full module list in handbook: https://teaching.scss.tcd.ie/wp-content/uploads/sites/10/2025/09/Joint-Honours-Computer-Science-Handbook-2025_2026-1.pdf",
     "work_placement": false,
     "programme_url": "https://www.tcd.ie/courses/undergraduate/courses/computer-science-jh/"
   },
   {
     "name": "BSc Computer Science",
-    "full_name": "BSc (Hons) Computer Science",
-    "institution": "UCD",
-    "institution_full": "University College Dublin (UCD)",
-    "location": "Dublin (Belfield)",
-    "cao_code": "DN201",
-    "cao_points": 511,
+    "full_name": "BSc (Hons) Computer Science (DN201)",
+    "institution": "Maynooth",
+    "institution_full": "Maynooth University",
+    "location": "Maynooth, Co. Kildare",
+    "cao_code": "MH602",
+    "cao_points": 401,
     "award": "BSc (Hons)",
     "nfq_level": 8,
     "stages": 4,
-    "x": 10,
-    "y": 1,
+    "x": 9,
+    "y": 2,
     "type": "university",
     "note": "",
     "modules": {
-      "year_1_stage_1": [
-        "11 core modules including: Introduction to Programming, Computational Thinking, Relational Databases, Computer Architecture, Web Development",
-        "Mathematics (H5 Maths or MATH00010 prerequisite)",
-        "1 elective module"
-      ],
-      "year_2_stage_2": [
-        "10 core modules",
-        "Optional: 10 credits elective or 2 option modules"
-      ],
-      "year_3_stage_3": [
-        "7 core modules",
-        "1 option module from List A (15cr)",
-        "Further 10cr from List B options or electives",
-        "Optional: Industry Placement (5.5 months)"
-      ],
-      "year_4_stage_4": [
-        "1 core module",
-        "9 option modules",
-        "Key topics: Software Architecture, Cloud Development, Computer Graphics, Game Development, Robotics, Mobile Development, Machine Learning, AI, Networks, Security",
-        "Multi-paradigm Programming",
-        "Final Year Project"
-      ]
+      "year_1": {
+        "note": "Common entry — students take Computer Science alongside a second subject chosen from Arts, Science or Social Science. See https://apps.maynoothuniversity.ie/courses/?TARGET=QUALIFICATION&MODE=VIEW&SUBJECT_CODE=&OFFERING_CODE=U_HONS_DEGREES&QUALIFICATION_CODE=CSEA"
+      },
+      "year_2": {
+        "semester_1": [
+          "Algorithms & Data Structures 1 (CS210)",
+          "Calculus 3A (MT201A)",
+          "Computer Architecture (CS220)",
+          "Databases (CS130)",
+          "Introduction to Integral Calculus (MT204A)",
+          "Software Testing (CS265)"
+        ],
+        "semester_2": [
+          "Algorithms & Data Structures 2 (CS211)",
+          "Introduction to UX, UI and Interaction Design (CS280)",
+          "Operating Systems, Communications and Concurrency (CS240)",
+          "Software Engineering & Software Process (CS335)",
+          "Theory of Computation (CS355)",
+          "Web Information Processing (CS230)"
+        ]
+      },
+      "year_3": {
+        "semester_1": [
+          "Computation & Complexity (CS370)",
+          "Computer Networks (CS320)",
+          "Programming Languages & Compilers (CS310)",
+          "Software Design (CS264)",
+          "Software Verification (CS357)",
+          "Team Project (CS353)"
+        ],
+        "semester_2": [
+          "Industrial Work Placement (CS363) — 25 credits",
+          "Work Placement Documentation (CS362)",
+          "Optional: Extended Industrial Work Placement / Study Abroad / Departmental Internship"
+        ]
+      },
+      "year_4": {
+        "semester_1": [
+          "Final Year Project CSSE (CS440) — 15 credits, year-long"
+        ],
+        "options": [
+          "Advanced Computer Architecture (CS433)",
+          "Advanced Concepts & Issues in CS (CS430)",
+          "Artificial Intelligence & Language Processing (CS404)",
+          "Audio & Speech Processing (CS425)",
+          "Autonomous Mobile Robotics (CS427)",
+          "Computer Graphics (CS426)",
+          "Computer Vision (CS410)",
+          "Cryptography (CS416)",
+          "Designing for Virtual Environments (CS423)",
+          "Image and Optical Processing (CS356)",
+          "Machine Learning & Neural Networks (CS401)",
+          "Music Programming 2 (CS322)",
+          "Numerical Computation (CS417)",
+          "Parallel & Distributed Systems (CS402)",
+          "Programming Language Design & Semantics (CS424)",
+          "Quantum Information Processing (MP472)",
+          "Robotics & Automation (CS422)"
+        ]
+      }
     },
-    "modules_note": "UCD uses a common entry Science stream (DN201) \u2014 degree subject chosen at end of Year 2. Degree subjects include: Computer Science; Computer Science with Data Science & AI. Full module list at programme URL",
+    "modules_note": "Common entry DN201. Students choose between Computer Science or Computer Science with Data Science & AI at end of Year 2. Full module details at programme URL.",
     "work_placement": true,
     "programme_url": "https://www.ucd.ie/courses/bsc-computer-science"
   },
@@ -138,161 +178,6 @@
     "name": "BSc Data Science and AI",
     "full_name": "BSc (Hons) in Data Science and Artificial Intelligence",
     "institution": "DCU",
-    "institution_full": "Dublin City University (DCU)",
-    "location": "Dublin (Glasnevin)",
-    "cao_code": "DC123",
-    "cao_points": 500,
-    "award": "BSc (Hons)",
-    "nfq_level": 8,
-    "stages": 4,
-    "x": 8,
-    "y": 1,
-    "type": "university",
-    "note": "",
-    "modules": [],
-    "modules_note": "Module list not fully listed \u2014 see programme URL",
-    "work_placement": true,
-    "programme_url": "https://www.dcu.ie/courses/undergraduate/school-computing/data-science-and-artificial-intelligence"
-  },
-  {
-    "name": "BSc Computer Science",
-    "full_name": "BSc (Hons) in Computer Science",
-    "institution": "DCU",
-    "institution_full": "Dublin City University (DCU)",
-    "location": "Dublin (Glasnevin)",
-    "cao_code": "DC121",
-    "cao_points": 487,
-    "award": "BSc (Hons)",
-    "nfq_level": 8,
-    "stages": 4,
-    "x": 9,
-    "y": 2,
-    "type": "university",
-    "note": "",
-    "modules": {
-      "year_1": [
-        "Computer Systems",
-        "Web Design",
-        "Digital Innovation Management and Enterprise",
-        "Computer Programming",
-        "Networks and Internet",
-        "Introduction to Operating Systems",
-        "IT Mathematics",
-        "Problem-Solving, Creativity and Critical Thinking"
-      ],
-      "year_2": [
-        "Logic",
-        "Systems Analysis",
-        "Operating Systems",
-        "Introduction to Databases",
-        "Software Testing",
-        "Computer Programming (Data Structures and Algorithms)",
-        "Object Oriented Programming",
-        "Introduction to DevOps",
-        "Systems Programming",
-        "Full Stack Development"
-      ],
-      "year_3": [
-        "Computer Networks",
-        "Machine Learning",
-        "OO Analysis and Design",
-        "Advanced Algorithms and Artificial Intelligence (AI) Search",
-        "Computability and Complexity",
-        "Comparative Programming Languages",
-        "User Interface Design and Implementation",
-        "IT Architecture",
-        "INTRA (6-month paid work placement)"
-      ],
-      "year_4": [
-        "Compiler Construction",
-        "Search Technologies",
-        "Cryptography and Security Protocols",
-        "Data Warehousing and Data Mining",
-        "Software Engineering",
-        "Concurrent and Distributed Programming",
-        "Machine Translation",
-        "Computer Science Project",
-        "Computer Graphics and Image Processing"
-      ]
-    },
-    "modules_note": "",
-    "work_placement": true,
-    "programme_url": "https://www.dcu.ie/courses/undergraduate/school-computing/computer-science"
-  },
-  {
-    "name": "BSc Computer Science",
-    "full_name": "BSc (Hons) Computer Science",
-    "institution": "UCC",
-    "institution_full": "University College Cork (UCC)",
-    "location": "Cork",
-    "cao_code": "CK401",
-    "cao_points": 456,
-    "award": "BSc (Hons)",
-    "nfq_level": 8,
-    "stages": 4,
-    "x": 9,
-    "y": 2,
-    "type": "university",
-    "note": "",
-    "modules": {
-      "year_1": [
-        "Introduction to Relational Databases (5cr)",
-        "Computer Hardware Organisation (5cr)",
-        "Systems Organisation (5cr)",
-        "Foundations of Computer Science I (5cr)",
-        "Foundations of Computer Science II (5cr)",
-        "Web Development I (5cr)",
-        "Web Development II (5cr)",
-        "Introduction to Programming (15cr)",
-        "Elective: Language / Mathematics (10cr)"
-      ],
-      "year_2": [
-        "Information Storage and Management I",
-        "Information Storage and Management II",
-        "Network Computing",
-        "Computer Architecture",
-        "Intermediate Programming",
-        "Introduction to Java",
-        "Algorithms and Data Structures I",
-        "Algorithms and Data Structures II",
-        "Operating Systems",
-        "Cloud Infrastructure and Services",
-        "Elective: Usability Engineering / Logic Design / Languages / Mathematics (10cr)"
-      ],
-      "year_3": [
-        "Software Engineering",
-        "Hands-On Machine Learning",
-        "Ethical Hacking and Web Security",
-        "Team Software Project",
-        "Workplace Technology and Skills",
-        "Work Placement (6 or 12 months)",
-        "Elective: Advanced Programming with Java / Networks / Theory of Computation / C for Microcontrollers (15cr)"
-      ],
-      "year_4": [
-        "Computer Science Project (15cr)",
-        "Elective: Special Topics I",
-        "Elective: Special Topics II",
-        "Elective: Principles of Compilation",
-        "Elective: Parallel and Grid Computing",
-        "Elective: Multimedia Compression and Delivery",
-        "Elective: Mobile and Wireless Networks",
-        "Elective: Advanced Software Engineering",
-        "Elective: Cryptography and Security Protocols",
-        "Elective: Artificial Intelligence I",
-        "Elective: Artificial Intelligence II",
-        "Elective: Constraint Programming and Optimisation",
-        "Elective: Internet of Things",
-        "Elective: Algorithms and Data Structures for Analytics"
-      ]
-    },
-    "modules_note": "",
-    "work_placement": true,
-    "programme_url": "https://www.ucc.ie/en/ck401/"
-  },
-  {
-    "name": "BSc Data Science and AI",
-    "full_name": "BSc (Hons) in Data Science and Artificial Intelligence",
-    "institution": "TU Dublin",
     "institution_full": "TU Dublin (Grangegorman)",
     "location": "Dublin (Grangegorman)",
     "cao_code": "TU850",
@@ -304,120 +189,64 @@
     "y": 1,
     "type": "tu",
     "note": "",
-    "modules": [],
-    "modules_note": "Full module list at programme URL",
-    "work_placement": true,
-    "programme_url": "https://www.tudublin.ie/study/undergraduate/courses/data-science-and-artificial-intelligence-tu850/"
-  },
-  {
-    "name": "BSc Computer Science",
-    "full_name": "BSc (Hons) in Computer Science",
-    "institution": "TU Dublin",
-    "institution_full": "TU Dublin (Grangegorman)",
-    "location": "Dublin (Grangegorman)",
-    "cao_code": "TU856",
-    "cao_points": 443,
-    "award": "BSc (Hons)",
-    "nfq_level": 8,
-    "stages": 4,
-    "x": 9,
-    "y": 2,
-    "type": "tu",
-    "note": "",
     "modules": {
       "year_1": {
         "semester_1": [
-          "Communications",
-          "IT Fundamentals",
-          "Mathematics 1",
-          "Program Design",
-          "Programming",
-          "Web Development 1"
+          "Introduction to R",
+          "Linear Mathematics 1",
+          "Calculus",
+          "Probability & Statistics",
+          "Computer Programming 1"
         ],
         "semester_2": [
-          "Algorithm Design and Problem Solving",
-          "Computer Architecture and Technology",
-          "Microprocessor Systems",
-          "Operating Systems 1",
-          "Programming",
-          "Data Exploration"
+          "Linear Mathematics 2",
+          "Computer Programming 2",
+          "Data Science and Databases",
+          "Computer Systems"
         ]
       },
       "year_2": {
         "semester_1": [
-          "Databases 1",
-          "Mathematics II",
-          "Object Oriented Programming",
-          "Operating Systems 2",
-          "Software Engineering 1",
-          "Web Development 2"
+          "Statistics 1",
+          "Calculus",
+          "Computer Programming 3",
+          "Developing Internet Applications",
+          "Data Warehousing"
         ],
         "semester_2": [
-          "GenAI-Assisted Programming",
-          "Algorithms & Data Structures",
-          "Data Communications",
-          "Human Computer Interaction",
-          "Legal and Professional Issues",
-          "Software Engineering 2"
+          "Statistics 2",
+          "Computer Programming 4",
+          "Logic",
+          "Data Processing and Visualisation",
+          "Programming for Data Analysis"
         ]
       },
       "year_3": {
         "semester_1": [
-          "Client Serving Programming",
-          "Cloud Computing",
-          "Databases 2",
-          "Mobile Software Development",
-          "Software Engineering 3",
-          "Introduction to Artificial Intelligence"
+          "Professional and Research Practice for Data Science",
+          "Data Exploration Using Graph Theory",
+          "Fundamentals of Software Testing",
+          "Search Technologies",
+          "Application Domains 1"
         ],
-        "semester_2_electives": [
-          "Business & Enterprise",
-          "Individual Project",
-          "Mobile Robotics",
-          "Service-Learning & Civic Engagement",
-          "Team Project",
-          "Universal Design & Assistive Technology",
-          "Work Placement",
-          "Introduction to DevOps",
-          "Cryptography & Cyber Security",
-          "Software Testing",
-          "Global Classroom",
-          "Study Abroad options"
+        "semester_2": [
+          "INTRA (8 months) or Study Abroad"
         ]
       },
       "year_4": {
-        "semester_1_electives": [
-          "Advanced Databases",
-          "Advanced Security 1",
-          "Machine Learning for Data Analytics",
-          "Distributed Systems",
-          "Forensics",
-          "Games Engines 1",
-          "Rich Web Application Technology",
-          "Advanced Web Mapping",
-          "Fundamentals of IoT",
-          "Image Processing"
-        ],
-        "semester_2_electives": [
-          "Advanced Security 2",
-          "Artificial Intelligence",
-          "Bioinformatics",
-          "Enterprise Application Development",
-          "Enterprise Systems Infrastructure and Architecture",
-          "Games Engines 2",
-          "Geographical Info Systems",
-          "Environmental Analytics",
-          "Systems Software",
-          "Visualizing Data"
-        ],
-        "mandatory": [
-          "Final Year Project (both semesters)"
+        "semester_1": [
+          "Application Domains 2 and 3",
+          "Data Analytics at Speed and Scale",
+          "Natural Language Technologies",
+          "Advanced Machine Learning",
+          "Building Complex Computational Models",
+          "Final Year Project"
         ]
       }
     },
-    "modules_note": "",
+    "modules_note": "Full module list at programme URL",
     "work_placement": true,
-    "programme_url": "https://www.tudublin.ie/study/undergraduate/courses/computer-science-tu856/"
+    "programme_url": "https://www.dcu.ie/courses/undergraduate/school-computing/data-science-and-artificial-intelligence"
   },
   {
     "name": "BSc Computer Science and IT",
@@ -457,7 +286,7 @@
         "Optional: Electronic Instrumentation / Digital Security / Real Analysis / Linear Algebra / Statistics 2 / Formal Logic"
       ],
       "year_3": [
-        "CT3539: Professional Experience for Computer Science \u2014 8-month Placement (15cr)",
+        "CT3539: Professional Experience for Computer Science — 8-month Placement (15cr)",
         "CT3538: PEP Learning & Professional Development (5cr)",
         "CT3532: Database Systems 2 (5cr)",
         "CT3531: Networks and Data Communications 2 (5cr)",
@@ -478,47 +307,6 @@
     "programme_url": "https://www.universityofgalway.ie/courses/undergraduate-courses/computer-science-and-information-technology.html"
   },
   {
-    "name": "BSc Computer Science",
-    "full_name": "BSc (Hons) in Computer Science",
-    "institution": "Maynooth",
-    "institution_full": "Maynooth University",
-    "location": "Maynooth, Co. Kildare",
-    "cao_code": "MH602",
-    "cao_points": 401,
-    "award": "BSc (Hons)",
-    "nfq_level": 8,
-    "stages": 4,
-    "x": 9,
-    "y": 2,
-    "type": "university",
-    "note": "",
-    "modules": {
-      "year_1": [
-        "Computer Science (30 credits)",
-        "Mathematics (15 credits)",
-        "Choice of 1 other Science subject (Biology / Engineering Science / Experimental Physics / Mathematical Physics)"
-      ],
-      "year_2_to_4": [
-        "Programming (various levels)",
-        "Data Structures and Algorithms",
-        "Object-Oriented Software Development",
-        "Software Engineering",
-        "Computer Vision",
-        "Robotics",
-        "Cryptography",
-        "Artificial Intelligence",
-        "Theoretical Computer Studies",
-        "Machine Learning",
-        "Mobile and Web Development",
-        "Multimedia Systems",
-        "Final Year Project"
-      ]
-    },
-    "modules_note": "Full individual module list at programme URL \u2014 year 2\u20134 module selection varies",
-    "work_placement": true,
-    "programme_url": "https://www.maynoothuniversity.ie/study-maynooth/undergraduate-studies/courses/bsc-computer-science-software-engineering-css"
-  },
-  {
     "name": "BSc Computer Science (Arts)",
     "full_name": "BSc (Hons) in Computer Science (through Arts)",
     "institution": "Maynooth",
@@ -534,26 +322,9 @@
     "type": "university",
     "note": "",
     "modules": {
-      "year_1": [
-        "Computer Science (30 credits)",
-        "Arts subject(s) of choice"
-      ],
-      "year_2_to_4": [
-        "Programming",
-        "Data Structures and Algorithms",
-        "Object-Oriented Software Development",
-        "Software Engineering",
-        "Computer Vision",
-        "Robotics",
-        "Cryptography",
-        "Artificial Intelligence",
-        "Machine Learning",
-        "Mobile and Web Development",
-        "Multimedia Systems",
-        "Final Year Project"
-      ]
+      "note": "Same CS content as MH602 from Year 2 onwards. Year 1 is common entry via Arts stream."
     },
-    "modules_note": "Same CS content as MH602 but entered via Arts \u2014 see programme URL",
+    "modules_note": "Same CS content as MH602 but entered via Arts — see programme URL",
     "work_placement": true,
     "programme_url": "https://www.maynoothuniversity.ie/study-maynooth/undergraduate-studies/courses/bsc-computer-sci-software-engineering-arts-csa"
   },
@@ -572,8 +343,72 @@
     "y": 4,
     "type": "university",
     "note": "",
-    "modules": [],
-    "modules_note": "Module list not fully listed \u2014 see programme URL",
+    "modules": {
+      "year_1": {
+        "semester_1": [
+          "Web Design",
+          "Collaboration and Innovation",
+          "Introduction to Computer Hardware",
+          "Problem Solving, Creativity and Critical Thinking",
+          "Digital Innovation Management & Enterprise",
+          "Mathematics for Enterprise Computing"
+        ],
+        "semester_2": [
+          "Data Analysis and Visualisation",
+          "Digital World",
+          "Networks and Internet",
+          "Programming Fundamentals",
+          "Business Applications",
+          "Managing Enterprise Computer Systems"
+        ]
+      },
+      "year_2": {
+        "semester_1": [
+          "Advanced Web Design",
+          "Systems Analysis",
+          "Enterprise Information Systems",
+          "Business Database Management I",
+          "Programming Fundamentals II",
+          "Project Management"
+        ],
+        "semester_2": [
+          "Business Systems Analysis",
+          "Enterprise Computer Systems Configuration",
+          "Developing Internet Applications",
+          "Programming Fundamentals III",
+          "Professional Practice for Computing"
+        ]
+      },
+      "year_3": {
+        "semester_1": [
+          "Quantitative Analysis for Business Decisions",
+          "Business Information Management",
+          "IT Architecture",
+          "User Interface Design & Implementation",
+          "Fundamentals of Software Testing",
+          "Programming Fundamentals (Project)"
+        ],
+        "semester_2": [
+          "INTRA or Semester One Abroad (optional)"
+        ]
+      },
+      "year_4": {
+        "semester_1": [
+          "Search Technologies",
+          "App Development",
+          "High-Technology Innovation & Entrepreneurship",
+          "Exploring Innovative & Disruptive Technologies",
+          "Enterprise Computing Team Project"
+        ],
+        "semester_2": [
+          "Software Engineering: Process, Principles & Methods",
+          "Enterprise Architecture",
+          "Machine Learning",
+          "ECIU (DCU students only, optional)"
+        ]
+      }
+    },
+    "modules_note": "Module list not fully listed — see programme URL",
     "work_placement": true,
     "programme_url": "https://www.dcu.ie/courses/undergraduate/school-computing/computing-business"
   },
@@ -592,8 +427,68 @@
     "y": 2,
     "type": "tu",
     "note": "",
-    "modules": [],
-    "modules_note": "Same core CS content as TU856 with international placement and language modules \u2014 full module list at programme URL",
+    "modules": {
+      "year_1": {
+        "semester_1": [
+          "Global Citizenship (Professional and Ethical Communications)",
+          "Mathematics 1",
+          "Program Design",
+          "Programming",
+          "Web Development 1",
+          "Elective: Chinese Language and Culture 1 / German Language 1B / Korean Language and Culture 1"
+        ],
+        "semester_2": [
+          "Algorithm Design and Problem Solving",
+          "Computer Architecture and Technology",
+          "Operating Systems 1",
+          "Programming",
+          "Software for the Global Market 1 (User Interface Design)",
+          "Elective: Chinese / German / Korean Language"
+        ]
+      },
+      "year_2": {
+        "semester_1": [
+          "Databases 1",
+          "Mathematics II",
+          "Object Oriented Programming",
+          "Operating Systems 2",
+          "Software Engineering 1",
+          "Elective: Chinese / German / Korean Language 2"
+        ],
+        "semester_2": [
+          "GenAI-Assisted Programming",
+          "Algorithms & Data Structures",
+          "Data Communications",
+          "Legal and Professional Issues",
+          "Software for the Global Market 2 (Internationalisation & Localisation)",
+          "Elective: Chinese / German / Korean Language 2"
+        ]
+      },
+      "year_3": {
+        "semester_1": [
+          "Software Engineering 2",
+          "Client Serving Programming",
+          "Databases 2",
+          "Mobile Software Development",
+          "Web Development & Deployment",
+          "Elective: Cloud Computing / Intro to AI / Study Abroad / Languages"
+        ],
+        "semester_2": [
+          "Elective: Business & Enterprise / Individual Project / Mobile Robotics / Universal Design / Work Placement / DevOps / Cryptography & Cyber Security / Software Testing / Global Classroom / Study Abroad"
+        ]
+      },
+      "year_4": {
+        "semester_1": [
+          "Final Year Project",
+          "Elective: Advanced Databases / Advanced Security 1 / Machine Learning for Data Analytics / Distributed Systems / Forensics / Games Engines 1 / Rich Web Application Technology / Advanced Web Mapping / Fundamentals of IoT / Image Processing"
+        ],
+        "semester_2": [
+          "Final Year Project",
+          "Elective: Advanced Security 2 / AI / Bioinformatics / Enterprise Application Development / Games Engines 2 / Geographical Info Systems / Environmental Analytics / Systems Software / Visualizing Data"
+        ]
+      }
+    },
+    "modules_note": "Same core CS content as TU856 with international placement and language modules — full module list at programme URL",
     "work_placement": true,
     "programme_url": "https://www.tudublin.ie/study/undergraduate/courses/computer-science-international-tu858/"
   },
@@ -612,333 +507,75 @@
     "y": 1,
     "type": "tu",
     "note": "",
-    "modules": [],
-    "modules_note": "Networks, cybersecurity, cloud focus \u2014 full module list at programme URL",
-    "work_placement": true,
-    "programme_url": "https://www.tudublin.ie/study/undergraduate/courses/computer-science-infrastructure-tu857/"
-  },
-  {
-    "name": "BSc Computer Systems",
-    "full_name": "BSc (Hons) Computer Systems",
-    "institution": "UL",
-    "institution_full": "University of Limerick (UL)",
-    "location": "Limerick",
-    "cao_code": "LM121",
-    "cao_points": 336,
-    "award": "BSc (Hons)",
-    "nfq_level": 8,
-    "stages": 4,
-    "x": 9,
-    "y": 2,
-    "type": "university",
-    "note": "",
     "modules": {
       "year_1": {
         "semester_1": [
-          "CS4012: Representation and Modelling",
-          "CS4141: Introduction to Programming",
-          "CS4221: Foundations of Computer Science 1",
-          "ET4011: Fundamentals of Computer Organisation",
-          "MA4111: Discrete Mathematics"
+          "Building a PC",
+          "Communications and Personal Development",
+          "Introduction to Operating Systems",
+          "IT Fundamentals",
+          "Program Design",
+          "Programming"
         ],
         "semester_2": [
-          "CS4043: Games Modelling Design",
-          "CS4222: Software Development",
-          "CS4182: Foundations of Computer Science 2",
-          "ET4162: Computing System Organisation",
-          "MA4402: Computer Maths 2"
+          "Introduction to Algorithms",
+          "Mathematics 1",
+          "Network Fundamentals",
+          "Programming",
+          "Team Computing",
+          "Data Exploration"
         ]
       },
       "year_2": {
-        "semester_3": [
-          "CS4013: Object Oriented Development",
-          "CS4023: Operating Systems",
-          "CS4416: Database Systems",
-          "CS4004: Software Testing and Inspection",
-          "CS4178: Software Requirements and Modelling"
+        "semester_1": [
+          "Legal and Professional Issues",
+          "Microprocessors",
+          "Networking 2",
+          "Object Oriented Programming",
+          "Operating Systems and System Administration",
+          "System Infrastructure and Architecture I"
         ],
-        "semester_4": [
-          "CS4006: Intelligent Systems",
-          "CS4076: Event Driven Programming",
-          "CS4115: Data Structures and Algorithms",
-          "CS4815: Computer Graphics",
-          "MA4413: Statistics for Computing"
+        "semester_2": [
+          "GenAI-Assisted Programming",
+          "Databases 1",
+          "Human Computer Interaction",
+          "Internet Applications and Web Development",
+          "Mathematics II",
+          "Networking 3"
         ]
       },
       "year_3": {
-        "semester_5": [
-          "CS4230: Cooperative Education (8-month placement)",
-          "CS4310: Cooperative Education"
+        "semester_1": [
+          "Cloud Computing",
+          "Databases 2",
+          "Mobile Software Development",
+          "Networking Programming",
+          "Web Development & Deployment",
+          "Introduction to DevOps",
+          "Elective: Individual Project / Study Abroad"
         ],
-        "semester_6": [
-          "CS4457: Project Management and Practice",
-          "CS4187: Professional Issues in Computing",
-          "CS4084: Mobile Application Development",
-          "CS4116: Software Development Project",
-          "CS4106: Machine Learning: Methods and Applications"
+        "semester_2": [
+          "Elective: Business & Enterprise / Individual Project / Mobile Robotics / Service-Learning / Systems Infrastructure and Architecture 2 / Team Project / Universal Design / Work Placement / Cryptography & Cyber Security / Software Testing / Global Classroom / Study Abroad"
         ]
       },
       "year_4": {
-        "semester_7": [
-          "CS4617: Computer Systems Project 1",
-          "CS4125: Systems Analysis and Design",
-          "CS4207: Advanced Programming Concepts and Practices",
-          "CS4337: Big Data Management and Security",
-          "CS4287: Neural Computing"
+        "semester_1": [
+          "Advanced Security 1 (Mandatory)",
+          "Final Year Project (Mandatory)",
+          "Systems Integration (Mandatory)",
+          "Elective: Advanced Databases / Machine Learning for Data Analytics / Distributed Systems / Forensics / Games Engines 1 / Rich Web Application Technology / Advanced Web Mapping / Fundamentals of IoT / Image Processing"
         ],
-        "semester_8": [
-          "CS4618: Computer Systems Project 2 (Double Weighted)",
-          "CS4227: Software Design and Architecture",
-          "CS4158: Programming Language Technology",
-          "CS4168: Data Mining"
+        "semester_2": [
+          "Advanced Security 2 (Mandatory)",
+          "Final Year Project (Mandatory)",
+          "System and Database Administration (Mandatory)",
+          "Elective: AI / Bioinformatics / Enterprise Application Development / Games Engines 2 / Geographical Info Systems / Environmental Analytics / Systems Software / Visualizing Data"
         ]
       }
     },
-    "modules_note": "Entry is via LM121 Computer Science Common Entry \u2014 pathways also include Cyber Security and IT Forensics, and Computer Games Development",
+    "modules_note": "Networks, cybersecurity, cloud focus — full module list at programme URL",
     "work_placement": true,
-    "programme_url": "https://www.ul.ie/courses/bachelor-science-computer-systems"
-  },
-  {
-    "name": "BSc Computing (Common Entry)",
-    "full_name": "BSc (Hons) in Computer Science (Common Entry)",
-    "institution": "SETU",
-    "institution_full": "South East Technological University (SETU)",
-    "location": "Waterford",
-    "cao_code": "SE600",
-    "cao_points": 322,
-    "award": "BSc (Hons)",
-    "nfq_level": 8,
-    "stages": 4,
-    "x": 9,
-    "y": 1,
-    "type": "tu",
-    "note": "",
-    "modules": {
-      "year_1": [
-        "Programming Fundamentals",
-        "Mathematics",
-        "Physics",
-        "Fundamental Computing Concepts",
-        "Web Development"
-      ],
-      "year_2_onwards_streams": [
-        "SE600 AAS \u2014 Automotive and Automation Systems",
-        "SE600 CLN \u2014 Cloud and Networks",
-        "SE600 CFS \u2014 Computer Forensics and Security",
-        "SE600 IOT \u2014 Internet of Things",
-        "SE600 GAD \u2014 Games Development"
-      ]
-    },
-    "modules_note": "Students choose stream from Year 2 \u2014 spine is software development throughout all 4 years \u2014 full module list at programme URL",
-    "work_placement": true,
-    "programme_url": "https://www.setu.ie/courses/bsc-hons-in-computer-science-common-entry"
-  },
-  {
-    "name": "BSc Computing \u2014 Kerry",
-    "full_name": "BSc (Hons) Computing \u2014 Kerry (Common Entry)",
-    "institution": "MTU",
-    "institution_full": "Munster Technological University (MTU)",
-    "location": "Kerry (North Campus)",
-    "cao_code": "MT803",
-    "cao_points": 308,
-    "award": "BSc (Hons)",
-    "nfq_level": 8,
-    "stages": 4,
-    "x": 7,
-    "y": 2,
-    "type": "tu",
-    "note": "",
-    "modules": [],
-    "modules_note": "Streams include Games Development, Software Development, Cloud Development \u2014 module list at programme URL",
-    "work_placement": true,
-    "programme_url": "https://www.mtu.ie/courses/mt803/"
-  },
-  {
-    "name": "Data Science",
-    "full_name": "Data Science",
-    "institution": "NCI",
-    "institution_full": "National College of Ireland (NCI)",
-    "location": "Dublin (IFSC)",
-    "cao_code": "NC025",
-    "cao_points": 290,
-    "award": "BSc (Hons)",
-    "nfq_level": 8,
-    "stages": 4,
-    "x": 6,
-    "y": 1,
-    "type": "other",
-    "note": "",
-    "modules": [],
-    "modules_note": "Module list not publicly available \u2014 see programme URL",
-    "work_placement": false,
-    "programme_url": "https://www.ncirl.ie/Courses/Undergraduate/Bsc-Hons-Data-Science"
-  },
-  {
-    "name": "BSc Computing (Information Technology)",
-    "full_name": "BSc (Hons) in Computing (Information Technology)",
-    "institution": "TU Dublin",
-    "institution_full": "TU Dublin (Blanchardstown)",
-    "location": "Dublin (Blanchardstown)",
-    "cao_code": "TU860",
-    "cao_points": 280,
-    "award": "BSc (Hons)",
-    "nfq_level": 8,
-    "stages": 4,
-    "x": 7,
-    "y": 2,
-    "type": "tu",
-    "note": "",
-    "modules": [],
-    "modules_note": "Software, cloud, data analytics and emerging tech focus \u2014 full module list at programme URL",
-    "work_placement": true,
-    "programme_url": "https://www.tudublin.ie/study/undergraduate/courses/computing-tu860/"
-  },
-  {
-    "name": "BSc Computing with ML and AI",
-    "full_name": "BSc (Hons) in Computing with Machine Learning and Artificial Intelligence",
-    "institution": "TU Dublin",
-    "institution_full": "TU Dublin (Tallaght)",
-    "location": "Dublin (Tallaght)",
-    "cao_code": "TU862",
-    "cao_points": 280,
-    "award": "BSc (Hons)",
-    "nfq_level": 8,
-    "stages": 4,
-    "x": 7,
-    "y": 1,
-    "type": "tu",
-    "note": "",
-    "modules": [],
-    "modules_note": "Full module list at programme URL",
-    "work_placement": true,
-    "programme_url": "https://www.tudublin.ie/study/undergraduate/courses/computing-with-machine-learning-and-artificial-intelligence-tu862/"
-  },
-  {
-    "name": "BSc Computing (Software Development)",
-    "full_name": "Computing (Software Development)",
-    "institution": "DBS",
-    "institution_full": "Dublin Business School (DBS)",
-    "location": "Dublin",
-    "cao_code": "DB503",
-    "cao_points": 275,
-    "award": "BSc (Hons)",
-    "nfq_level": 8,
-    "stages": 4,
-    "x": 7,
-    "y": 1,
-    "type": "other",
-    "note": "",
-    "modules": [],
-    "modules_note": "Module list not publicly available \u2014 see programme URL",
-    "work_placement": false,
-    "programme_url": "https://www.dbs.ie/courses/undergraduate/computing-software-development"
-  },
-  {
-    "name": "BSc Information Technology",
-    "full_name": "BSc (Hons) in Information Technology",
-    "institution": "SETU",
-    "institution_full": "South East Technological University (SETU)",
-    "location": "Waterford / Carlow",
-    "cao_code": "SE601",
-    "cao_points": 275,
-    "award": "BSc (Hons)",
-    "nfq_level": 8,
-    "stages": 4,
-    "x": 5,
-    "y": 2,
-    "type": "tu",
-    "note": "",
-    "modules": [],
-    "modules_note": "Module list not publicly detailed \u2014 see programme URL",
-    "work_placement": true,
-    "programme_url": "https://www.setu.ie/courses/bsc-in-information-technology"
-  },
-  {
-    "name": "BSc Software Development",
-    "full_name": "BSc (Hons) in Software Development",
-    "institution": "MTU Cork",
-    "institution_full": "Munster Technological University (MTU)",
-    "location": "Cork (Bishopstown)",
-    "cao_code": "MT800",
-    "cao_points": 268,
-    "award": "BSc (Hons)",
-    "nfq_level": 8,
-    "stages": 4,
-    "x": 9,
-    "y": 1,
-    "type": "tu",
-    "note": "",
-    "modules": {
-      "year_1_common": [
-        "Introduction to Programming",
-        "Introduction to Databases",
-        "Mathematics",
-        "Operating Systems",
-        "Web Development",
-        "Networking and Security"
-      ],
-      "year_2": [
-        "Algorithms and Data Structures",
-        "Object-Oriented Programming",
-        "Database Architectures and Design",
-        "Statistics and Probability",
-        "Software Engineering"
-      ],
-      "year_3": [
-        "Work Placement (January onwards)",
-        "Cloud Computing",
-        "Mobile Application Development"
-      ],
-      "year_4": [
-        "Data Analytics",
-        "Machine Learning",
-        "Advanced Software Engineering",
-        "Final Year Project"
-      ]
-    },
-    "modules_note": "Year 1 common curriculum shared across all MTU Cork CS programmes \u2014 full schedule at https://cs.cit.ie/sdh",
-    "work_placement": true,
-    "programme_url": "https://www.mtu.ie/courses/mt800/"
-  },
-  {
-    "name": "BSc Computing",
-    "full_name": "Computing",
-    "institution": "NCI",
-    "institution_full": "National College of Ireland (NCI)",
-    "location": "Dublin (IFSC)",
-    "cao_code": "NC003",
-    "cao_points": 262,
-    "award": "BSc (Hons)",
-    "nfq_level": 8,
-    "stages": 4,
-    "x": 7,
-    "y": 2,
-    "type": "other",
-    "note": "",
-    "modules": [],
-    "modules_note": "Module list not publicly available \u2014 see programme URL",
-    "work_placement": false,
-    "programme_url": "https://www.ncirl.ie/Courses/Undergraduate/Bsc-Hons-Computing"
-  },
-  {
-    "name": "Computing (Data Analytics)",
-    "full_name": "Computing (Data Analytics and Big Data)",
-    "institution": "DBS",
-    "institution_full": "Dublin Business School (DBS)",
-    "location": "Dublin",
-    "cao_code": "DB502",
-    "cao_points": 252,
-    "award": "BSc (Hons)",
-    "nfq_level": 8,
-    "stages": 4,
-    "x": 6,
-    "y": 1,
-    "type": "other",
-    "note": "",
-    "modules": [],
-    "modules_note": "Module list not publicly available \u2014 see programme URL",
-    "work_placement": false,
-    "programme_url": "https://www.dbs.ie/courses/undergraduate/computing-data-analytics-and-big-data"
+    "programme_url": "https://www.tudublin.ie/study/undergraduate/courses/computer-science-infrastructure-tu857/"
   },
   {
     "name": "BSc Computer Systems",
@@ -973,45 +610,9 @@
         "Final Year Project"
       ]
     },
-    "modules_note": "Year 1 common curriculum \u2014 specialist embedded/systems stream from Year 2 \u2014 full module list at https://cs.cit.ie/cs",
+    "modules_note": "Year 1 common curriculum — specialist embedded/systems stream from Year 2 — full module list at https://cs.cit.ie/cs",
     "work_placement": true,
     "programme_url": "https://www.mtu.ie/courses/mt802/"
-  },
-  {
-    "name": "BSc IT Management and Cybersecurity",
-    "full_name": "BSc (Hons) in IT Management and Cybersecurity",
-    "institution": "MTU Cork",
-    "institution_full": "Munster Technological University (MTU)",
-    "location": "Cork (Bishopstown)",
-    "cao_code": "MT805",
-    "cao_points": 240,
-    "award": "BSc (Hons)",
-    "nfq_level": 8,
-    "stages": 4,
-    "x": 5,
-    "y": 2,
-    "type": "tu",
-    "note": "",
-    "modules": {
-      "year_1_common": [
-        "Introduction to Programming",
-        "Introduction to Databases",
-        "Mathematics",
-        "Operating Systems",
-        "Web Development",
-        "Networking and Security"
-      ],
-      "year_2_onwards": [
-        "Cybersecurity",
-        "Networking",
-        "Cloud Computing Technologies",
-        "Automation",
-        "IT Management"
-      ]
-    },
-    "modules_note": "Year 1 common \u2014 IT Management/Cyber stream from Year 2 \u2014 full module list at programme URL",
-    "work_placement": true,
-    "programme_url": "https://www.mtu.ie/courses/mt805/"
   },
   {
     "name": "BSc Computing (Common Entry)",
@@ -1040,18 +641,18 @@
       "Cybersecurity",
       "Final Year Project"
     ],
-    "modules_note": "Partial \u2014 full module list at programme URL",
+    "modules_note": "Partial — full module list at programme URL",
     "work_placement": true,
     "programme_url": "https://www.atu.ie/courses/bachelor-of-science-honours-computing-sligo-full-time"
   },
   {
-    "name": "BSc Computing",
-    "full_name": "BSc (Hons) in Computing",
-    "institution": "DkIT",
-    "institution_full": "Dundalk Institute of Technology (DkIT)",
-    "location": "Dundalk, Co. Louth",
-    "cao_code": "DK800",
-    "cao_points": 237,
+    "name": "BSc Computing — Kerry",
+    "full_name": "BSc (Hons) Computing — Kerry (Common Entry)",
+    "institution": "MTU",
+    "institution_full": "Munster Technological University (MTU)",
+    "location": "Kerry (North Campus)",
+    "cao_code": "MT803",
+    "cao_points": 308,
     "award": "BSc (Hons)",
     "nfq_level": 8,
     "stages": 4,
@@ -1059,124 +660,314 @@
     "y": 2,
     "type": "tu",
     "note": "",
-    "modules": [],
-    "modules_note": "Module list not publicly detailed \u2014 see programme URL",
+    "modules": {
+      "year_1": {
+        "semester_1": [
+          "User Interfaces (AUVI 61008)",
+          "Computer Architecture (COMP 61003)",
+          "Network Fundamentals (NETW 61000)",
+          "Structured Programming 1 (PROG 61001)",
+          "Web Development 1 (SWDV 61004)",
+          "Rapid Application Development (SWDV 61015)"
+        ],
+        "semester_2": [
+          "Operating Systems 1 (COMP 61008)",
+          "Database Concepts (DBMS 61002)",
+          "Mathematics (MATH 61015)",
+          "Structured Programming 2 (PROG 61002)",
+          "Web Development 2 (SWDV 61005)"
+        ]
+      },
+      "year_2_cloud": {
+        "note": "Stream: Cloud Development",
+        "semester_1": [
+          "Operating Systems 2",
+          "Database Programming",
+          "Routing Concepts and Protocols",
+          "Object Oriented Programming",
+          "Requirements Engineering"
+        ],
+        "semester_2": [
+          "Algorithms and Data Structures",
+          "LAN Switching and Wireless",
+          "Cloud Services",
+          "Client Side Scripting",
+          "Software Engineering Project",
+          "Software Testing"
+        ]
+      },
+      "year_2_games": {
+        "note": "Stream: Games Development",
+        "semester_1": [
+          "Database Programming",
+          "Routing Concepts and Protocols",
+          "Object Oriented Programming",
+          "Games Development",
+          "Requirements Engineering"
+        ],
+        "semester_2": [
+          "3D Animation",
+          "Algorithms and Data Structures",
+          "LAN Switching and Wireless",
+          "Software Engineering Project",
+          "Practical Gaming",
+          "Software Testing"
+        ]
+      },
+      "year_2_software": {
+        "note": "Stream: Software Development",
+        "semester_1": [
+          "Database Programming",
+          "Routing Concepts and Protocols",
+          "Object Oriented Programming",
+          "Client Side Scripting",
+          "Requirements Engineering"
+        ],
+        "semester_2": [
+          "Algorithms and Data Structures",
+          "LAN Switching and Wireless",
+          "Software Engineering Project",
+          "Server Side Development",
+          "Scripting",
+          "Software Testing"
+        ]
+      },
+      "year_3": {
+        "semester_1": [
+          "Professional Development",
+          "Data Analytics",
+          "Data Structures & Concurrency",
+          "Object Oriented Analysis and Design",
+          "Software Tools",
+          "Stream-specific module (Cloud Analytics / Computer Graphics / Web Frameworks)"
+        ],
+        "semester_2": [
+          "Work Placement (25 credits) + Work Placement Review"
+        ]
+      },
+      "year_4_cloud": {
+        "note": "Stream: Cloud Development",
+        "semester_1": [
+          "Advanced Databases",
+          "Security and WAN Services",
+          "Cloud Technologies",
+          "Software Project Management",
+          "Final Year Project (Design)",
+          "Software Quality Management"
+        ],
+        "semester_2": [
+          "Distributed Computing",
+          "Final Year Project Development",
+          "Development Operations",
+          "Cloud Application Development",
+          "Elective: Digital Image Processing / AI / Games for Mobile Devices / Virtualisation"
+        ]
+      },
+      "year_4_games": {
+        "note": "Stream: Games Development",
+        "semester_1": [
+          "Advanced Databases",
+          "Games Middleware",
+          "Security and WAN Services",
+          "Software Project Management",
+          "Final Year Project (Design)",
+          "Software Quality Management"
+        ],
+        "semester_2": [
+          "AI",
+          "Distributed Computing",
+          "Games for Mobile Devices",
+          "Final Year Project Development",
+          "Elective: Digital Image Processing / Development Operations / Cloud Application Development"
+        ]
+      },
+      "year_4_software": {
+        "note": "Stream: Software Development",
+        "semester_1": [
+          "Advanced Databases",
+          "Security and WAN Services",
+          "Software Project Management",
+          "Final Year Project (Design)",
+          "Software Quality Management",
+          "Software Design Patterns"
+        ],
+        "semester_2": [
+          "Distributed Computing",
+          "Final Year Project Development",
+          "Development Operations",
+          "Cloud Application Development",
+          "Elective: Digital Image Processing / AI / Games for Mobile Devices"
+        ]
+      }
+    },
+    "modules_note": "Streams include Games Development, Software Development, Cloud Development — module list at programme URL",
     "work_placement": true,
-    "programme_url": "https://www.dkit.ie/courses/school-of-informatics-creative-arts/computing/bsc-hons-in-computing.html"
+    "programme_url": "https://www.mtu.ie/courses/mt803/"
   },
   {
-    "name": "BSc Computing and AI",
-    "full_name": "BSc (Hons) in Computing and Artificial Intelligence",
-    "institution": "ATU",
-    "institution_full": "Atlantic Technological University (ATU)",
-    "location": "Galway / Sligo / Donegal / Mayo",
-    "cao_code": "AU851",
-    "cao_points": 269,
-    "award": "BSc (Hons)",
-    "nfq_level": 8,
-    "stages": 4,
-    "x": 7,
-    "y": 2,
-    "type": "tu",
-    "note": "",
-    "modules": [
-      "Programming Fundamentals",
-      "Web Development",
-      "Database Systems",
-      "Networking",
-      "Object-Oriented Programming",
-      "Data Structures and Algorithms",
-      "Software Engineering",
-      "Machine Learning",
-      "Artificial Intelligence",
-      "Cloud Computing",
-      "Data Analytics",
-      "UX Design",
-      "Cybersecurity",
-      "Final Year Project"
-    ],
-    "modules_note": "Partial \u2014 full module list at programme URL",
-    "work_placement": true,
-    "programme_url": "https://www.atu.ie/courses/bachelor-of-science-honours-computing-and-artificial-intelligence"
-  },
-  {
-    "name": "BSc Computing (Applied Computing)",
-    "full_name": "BSc (Hons) in Computing (Applied Computing)",
-    "institution": "ATU Galway",
-    "institution_full": "Atlantic Technological University (ATU)",
-    "location": "Galway",
-    "cao_code": "AU853",
-    "cao_points": 222,
-    "award": "BSc (Hons)",
-    "nfq_level": 8,
-    "stages": 4,
-    "x": 7,
-    "y": 3,
-    "type": "tu",
-    "note": "",
-    "modules": [
-      "Programming",
-      "Data Analytics",
-      "UX Design",
-      "Web Architecture",
-      "Databases",
-      "Software Engineering",
-      "Cloud Computing",
-      "Networking",
-      "Final Year Project"
-    ],
-    "modules_note": "Partial \u2014 full module list at programme URL",
-    "work_placement": true,
-    "programme_url": "https://www.atu.ie/courses/bachelor-of-science-honours-computing-in-applied-computing"
-  },
-  {
-    "name": "Computing",
-    "full_name": "Computing",
-    "institution": "DBS",
-    "institution_full": "Dublin Business School (DBS)",
-    "location": "Dublin",
-    "cao_code": "DB500",
-    "cao_points": 398,
+    "name": "Data Science",
+    "full_name": "Data Science",
+    "institution": "NCI",
+    "institution_full": "National College of Ireland (NCI)",
+    "location": "Dublin (IFSC)",
+    "cao_code": "NC025",
+    "cao_points": 290,
     "award": "BSc (Hons)",
     "nfq_level": 8,
     "stages": 4,
     "x": 6,
-    "y": 2,
+    "y": 1,
     "type": "other",
     "note": "",
-    "modules": [],
-    "modules_note": "Module list not publicly available \u2014 see programme URL",
+    "modules": {
+      "year_1": {
+        "semester_1": [
+          "Computational Thinking",
+          "Discrete Mathematics",
+          "Programming Concepts",
+          "Introduction to Data Science & Artificial Intelligence",
+          "Web Design & Development"
+        ],
+        "semester_2": [
+          "Computer Architecture",
+          "Introduction to Data Modelling & Databases",
+          "The Computing Industry",
+          "Introduction to Programming",
+          "Operating Systems"
+        ]
+      },
+      "year_2": {
+        "semester_1": [
+          "Advanced Databases",
+          "Object Oriented Programming",
+          "Data Programming",
+          "Web Application Development",
+          "Statistics I"
+        ],
+        "semester_2": [
+          "Innovation & Business Entrepreneurship",
+          "Data Mining & Machine Learning",
+          "Data Visualisation",
+          "Linear Algebra",
+          "Statistics II"
+        ]
+      },
+      "year_3": {
+        "semester_1": [
+          "Artificial Intelligence",
+          "Advanced Machine Learning",
+          "Data Architecture",
+          "Data Warehousing & Business Intelligence",
+          "Scalable Data Analytics"
+        ],
+        "semester_2": [
+          "Option: Work Placement / Academic Internship / Service Learning / International Exchange"
+        ]
+      },
+      "year_4": {
+        "semester_1": [
+          "Final Year Project",
+          "Governance, Ethics, Security & Sustainability",
+          "Neural Networks & Prescriptive Analytics",
+          "Text Analytics & Natural Language Processing"
+        ],
+        "semester_2": [
+          "Final Year Project",
+          "Applied Deep Learning",
+          "IoT Real Time Analytics",
+          "Time Series & Financial Analytics"
+        ]
+      }
+    },
+    "modules_note": "Module list not publicly available — see programme URL",
     "work_placement": false,
-    "programme_url": "https://www.dbs.ie/courses/undergraduate/computing"
+    "programme_url": "https://www.ncirl.ie/Courses/Undergraduate/Bsc-Hons-Data-Science"
   },
   {
-    "name": "BSc Software Design with Digitalisation",
-    "full_name": "BSc (Hons) in Software Design with Digitalisation",
-    "institution": "TUS",
-    "institution_full": "Technological University of the Shannon (TUS)",
-    "location": "Athlone",
-    "cao_code": "US823",
-    "cao_points": null,
+    "name": "BSc Computing (Information Technology)",
+    "full_name": "BSc (Hons) in Computing (Information Technology)",
+    "institution": "TU Dublin",
+    "institution_full": "TU Dublin (Blanchardstown)",
+    "location": "Dublin (Blanchardstown)",
+    "cao_code": "TU860",
+    "cao_points": 280,
     "award": "BSc (Hons)",
     "nfq_level": 8,
     "stages": 4,
     "x": 7,
-    "y": 3,
+    "y": 2,
     "type": "tu",
     "note": "",
-    "modules": [],
-    "modules_note": "IoT and connected devices focus \u2014 full module list at programme URL",
+    "modules": {
+      "year_1": {
+        "semester_1": [
+          "Computer Organization and Architecture",
+          "Cybersecurity Fundamentals",
+          "Fundamentals of Programming 1",
+          "Networking 1",
+          "Personal & Professional Development"
+        ],
+        "semester_2": [
+          "Networking 2",
+          "Web Development Fundamentals",
+          "Mathematics for Computing",
+          "Fundamentals of Programming 2",
+          "Operating Systems"
+        ]
+      },
+      "year_2": {
+        "semester_1": [
+          "Database Fundamentals",
+          "Web Development Client-Side",
+          "Object-Oriented Programming",
+          "IT Mathematics and Data Visualisation",
+          "Cloud Fundamentals"
+        ],
+        "semester_2": [
+          "Advanced Programming",
+          "Advanced Databases and Analytics",
+          "Front End Development",
+          "Secure Full-stack Web Development"
+        ]
+      },
+      "year_3": {
+        "semester_1": [
+          "Data Structures & Algorithms",
+          "Rich Web Applications and Frameworks",
+          "Design Patterns",
+          "Applied Data Science",
+          "Work Placement Preparation"
+        ],
+        "semester_2": [
+          "Elective: Professional Group Project / Work Placement"
+        ]
+      },
+      "year_4": {
+        "semester_1": [
+          "Project (Part 1)",
+          "Research Skills",
+          "Applied Deep Learning & LLMs",
+          "Elective: Applied Human Language Technology / Mobile and Ubiquitous Computing / General Purpose GPU Computing / Green Computing / Universal Design for XR Systems / Parallel Computing / Advanced Data Science / Advanced Web Development Group Project"
+        ],
+        "semester_2": [
+          "Project (Part 2)",
+          "Software Quality & Ethics",
+          "Elective: IoT Technologies / Bio-Inspired Computing / Computer Vision / 3D and XR System Development / Natural Language Processing with Deep Learning / Programming Paradigms / Text Analytics and Web Content Mining / High Performance Computing"
+        ]
+      }
+    },
+    "modules_note": "Software, cloud, data analytics and emerging tech focus — full module list at programme URL",
     "work_placement": true,
-    "programme_url": "https://tus.ie/courses/us823/"
+    "programme_url": "https://www.tudublin.ie/study/undergraduate/courses/computing-tu860/"
   },
   {
-    "name": "BSc Software Design with AI for Cloud",
-    "full_name": "BSc (Hons) in Software Design with Artificial Intelligence for Cloud Computing",
-    "institution": "TUS",
-    "institution_full": "Technological University of the Shannon (TUS)",
-    "location": "Limerick (Moylish)",
-    "cao_code": "US822",
-    "cao_points": null,
+    "name": "BSc Computing with ML and AI",
+    "full_name": "BSc (Hons) in Computing with Machine Learning and Artificial Intelligence",
+    "institution": "TU Dublin",
+    "institution_full": "TU Dublin (Tallaght)",
+    "location": "Dublin (Tallaght)",
+    "cao_code": "TU862",
+    "cao_points": 280,
     "award": "BSc (Hons)",
     "nfq_level": 8,
     "stages": 4,
@@ -1184,10 +975,99 @@
     "y": 1,
     "type": "tu",
     "note": "",
-    "modules": [],
-    "modules_note": "Specialises in AI and Cloud \u2014 full module list at programme URL",
+    "modules": {
+      "year_1": {
+        "semester_1": [
+          "Critical Skills Development",
+          "Visual Design & User Experience",
+          "Business & Information Systems",
+          "Discrete Mathematics 1",
+          "Computer Architecture",
+          "Software Development 1"
+        ],
+        "semester_2": [
+          "Social Media Communications",
+          "Systems Analysis",
+          "Database Fundamentals",
+          "Statistics",
+          "Operating Systems Fundamentals",
+          "Software Development 2"
+        ]
+      },
+      "year_2": {
+        "semester_1": [
+          "Advanced Database Technologies",
+          "Discrete Mathematics 2",
+          "Network Fundamentals",
+          "Software Quality Assurance and Testing",
+          "Client-Side Web Development",
+          "Database Technologies",
+          "Elective: IT Scripting & Automation / Software Development 3"
+        ],
+        "semester_2": [
+          "Data Administration and Analysis",
+          "Management Science",
+          "Routing & Switching Essentials",
+          "Information Security",
+          "Project",
+          "Elective: IT Service Management / Software Development 4"
+        ]
+      },
+      "year_3": {
+        "semester_1": [
+          "Cloud Services & Distributed Computing",
+          "Data Analysis",
+          "Big Data Technologies",
+          "Operating Systems",
+          "Server-Side Web Development",
+          "Elective: Data Structures and Algorithms / Innovation & Entrepreneurship / Advanced Routing & Switching"
+        ],
+        "semester_2": [
+          "Work Placement"
+        ]
+      },
+      "year_4": {
+        "semester_1": [
+          "Applied Machine Learning",
+          "Social Media Analysis",
+          "Interactive Design & Visualisation",
+          "Information Management",
+          "Project — Data Analytics",
+          "Elective: DevOps / Security for the Cloud and IoT"
+        ],
+        "semester_2": [
+          "Applied Artificial Intelligence and Deep Learning",
+          "Data Analysis and Programming",
+          "E-Learning Elective",
+          "IT Governance and Quality",
+          "Project — Data Analytics Specialisation",
+          "Elective: Enterprise Performance Architecture / User Experience Design / Operations Research"
+        ]
+      }
+    },
+    "modules_note": "Full module list at programme URL",
     "work_placement": true,
-    "programme_url": "https://tus.ie/courses/us822/"
+    "programme_url": "https://www.tudublin.ie/study/undergraduate/courses/computing-with-machine-learning-and-artificial-intelligence-tu862/"
+  },
+  {
+    "name": "BSc Information Technology",
+    "full_name": "BSc (Hons) in Information Technology",
+    "institution": "SETU",
+    "institution_full": "South East Technological University (SETU)",
+    "location": "Waterford / Carlow",
+    "cao_code": "SE601",
+    "cao_points": 275,
+    "award": "BSc (Hons)",
+    "nfq_level": 8,
+    "stages": 4,
+    "x": 5,
+    "y": 2,
+    "type": "tu",
+    "note": "",
+    "modules": [],
+    "modules_note": "Module list not publicly detailed — see programme URL",
+    "work_placement": true,
+    "programme_url": "https://www.setu.ie/courses/bsc-in-information-technology"
   },
   {
     "name": "BSc Software Development",
@@ -1210,11 +1090,533 @@
     "programme_url": "https://tus.ie/courses/us820/"
   },
   {
-    "name": "BSc Creative Computing \u2014 current",
+    "name": "Computing (Data Analytics)",
+    "full_name": "Computing (Data Analytics and Big Data)",
+    "institution": "DBS",
+    "institution_full": "Dublin Business School (DBS)",
+    "location": "Dublin",
+    "cao_code": "DB502",
+    "cao_points": 252,
+    "award": "BSc (Hons)",
+    "nfq_level": 8,
+    "stages": 4,
+    "x": 6,
+    "y": 1,
+    "type": "other",
+    "note": "",
+    "modules": [],
+    "modules_note": "Module list not publicly available — see programme URL",
+    "work_placement": false,
+    "programme_url": "https://www.dbs.ie/courses/undergraduate/computing-data-analytics-and-big-data"
+  },
+  {
+    "name": "BSc IT Management and Cybersecurity",
+    "full_name": "BSc (Hons) in IT Management and Cybersecurity",
+    "institution": "MTU Cork",
+    "institution_full": "Munster Technological University (MTU)",
+    "location": "Cork (Bishopstown)",
+    "cao_code": "MT805",
+    "cao_points": 240,
+    "award": "BSc (Hons)",
+    "nfq_level": 8,
+    "stages": 4,
+    "x": 5,
+    "y": 2,
+    "type": "tu",
+    "note": "",
+    "modules": {
+      "year_1": {
+        "semester_1": [
+          "Computer Architecture (COMH6002)",
+          "Computer Security Principles (COMP6035)",
+          "Creativity Innovation & Teamwork (CMOD6001)",
+          "Maths for Computer Science (MATH6055)",
+          "Programming Fundamentals (SOFT6018)",
+          "Web Development Fundamentals (SOFT6007)"
+        ],
+        "semester_2": [
+          "Discrete Maths (MATH6004)",
+          "Introduction to Databases (COMP6041)",
+          "Modular Programming (SOFT6017)",
+          "Networking Fundamentals (COMP6027)",
+          "Operating Systems in Practice (COMP6042)",
+          "Physical Computing (COMP6043)"
+        ]
+      },
+      "year_2": {
+        "semester_1": [
+          "Database Design (SOFT7022)",
+          "Linux Administration (COMP7036)",
+          "Operating Systems (SOFT7006)",
+          "Requirements Engineering (SOFT7007)",
+          "Routing and Switching Concepts (COMP7032)",
+          "Elective: Client-side Web Development / Digital Wellbeing / Free Choice / Server-side Web Development"
+        ],
+        "semester_2": [
+          "Database Administration (COMP8017)",
+          "Scaling and Managing Networks (COMP7033)",
+          "Systems Scripting (COMP7044)",
+          "Virtualisation Technologies (COMP7041)",
+          "Windows Security (COMP7045)",
+          "Elective: Cyberethics / Free Choice / Internet & Network Services"
+        ]
+      },
+      "year_3": {
+        "semester_1": [
+          "Agile Processes (COMP7039)",
+          "Data Centre Virtualisation (SOFT8019)",
+          "Group Project (SOFT7003)",
+          "IT Project Management (COMP7012)",
+          "Network Security (COMP8022)",
+          "Elective: Cloud Networking / Free Choice / Technical Writing using XML"
+        ],
+        "semester_2": [
+          "Option: Work Placement (PLAC7009) — 30 credits",
+          "Or: Approved External Study — 30 credits",
+          "Or: Emerging Technological Trends + Open Source Projects + Technical Communication Skills"
+        ]
+      },
+      "year_4": {
+        "semester_1": [
+          "Enterprise Storage Systems (COMH8001)",
+          "IT Service Management (COMP8019)",
+          "IT Transformation (COMP8031)",
+          "Project — Research Phase (INTR8016)",
+          "Security Monitoring (COMP8027)",
+          "Elective: Security for Software Systems / Software-Defined Networking / Technical Writing using XML"
+        ],
+        "semester_2": [
+          "Ethical and Legal Issues in IT (LEGS8001)",
+          "IT Solutions Architecture (COMP8056)",
+          "Project — Implementation Phase (INTR8015)",
+          "Security Penetration Testing (COMP8028)",
+          "Elective: Applied Cryptography / NoSQL Data Architectures / Security Management"
+        ]
+      }
+    },
+    "modules_note": "Year 1 common — IT Management/Cyber stream from Year 2 — full module list at programme URL",
+    "work_placement": true,
+    "programme_url": "https://www.mtu.ie/courses/mt805/"
+  },
+  {
+    "name": "BSc Computing (Development and Operations Engineering)",
+    "full_name": "BSc (Hons) in Computing in Development and Operations Engineering",
+    "institution": "DkIT",
+    "institution_full": "Dundalk Institute of Technology (DkIT)",
+    "location": "Dundalk, Co. Louth",
+    "cao_code": "DK824",
+    "cao_points": null,
+    "award": "BSc (Hons)",
+    "nfq_level": 8,
+    "stages": 4,
+    "x": 7,
+    "y": 2,
+    "type": "tu",
+    "note": "DkIT restructured their computing programmes in 2026. DK824 replaces the previous general computing entry (DK800).",
+    "modules": {
+      "year_1": {
+        "semester_1": [
+          "Professional Skills for Computing",
+          "Programming",
+          "Static Website Development",
+          "Mathematics",
+          "Linux Fundamentals",
+          "Intro to Design",
+          "Networking"
+        ],
+        "semester_2": [
+          "Database Systems",
+          "Dynamic Website Development",
+          "DevOps",
+          "Project"
+        ]
+      },
+      "year_2": {
+        "semester_1": [
+          "Wellbeing and Career Resilience",
+          "Object-Oriented Programming",
+          "Software Testing",
+          "Computer Architecture",
+          "Microservices",
+          "Contemporary Web Development"
+        ],
+        "semester_2": [
+          "Object-Oriented Design",
+          "Project Management",
+          "Database Systems",
+          "Operating Systems",
+          "Deployment",
+          "Project"
+        ]
+      },
+      "year_3": {
+        "semester_1": [
+          "Design Patterns",
+          "Algorithms and Data Structures",
+          "Security",
+          "Automation",
+          "Production Management and AI Ops",
+          "Project"
+        ],
+        "semester_2": [
+          "Option: 15-week Work Placement or Study Abroad (Erasmus)"
+        ]
+      },
+      "year_4": {
+        "semester_1": [
+          "Agentic AI",
+          "Cloud Services",
+          "Research Methods",
+          "Networking for DevOps",
+          "The Ethical Future Professional",
+          "Cloud (IaaS)"
+        ],
+        "semester_2": [
+          "Stats & Data Analysis",
+          "Electives x 2",
+          "Project"
+        ]
+      }
+    },
+    "modules_note": "",
+    "work_placement": true,
+    "programme_url": "https://www.dkit.ie/courses/bsc-hons-in-computing-in-development-and-operations-engineering"
+  },
+  {
+    "name": "BSc Computing and AI",
+    "full_name": "BSc (Hons) in Computing and Artificial Intelligence",
+    "institution": "ATU",
+    "institution_full": "Atlantic Technological University (ATU)",
+    "location": "Galway / Sligo / Donegal / Mayo",
+    "cao_code": "AU851",
+    "cao_points": 269,
+    "award": "BSc (Hons)",
+    "nfq_level": 8,
+    "stages": 4,
+    "x": 7,
+    "y": 2,
+    "type": "tu",
+    "note": "",
+    "modules": {
+      "year_1": {
+        "semester_1": [
+          "Personal and Professional Development",
+          "Mathematics for Computing I",
+          "Introduction to Data Science",
+          "Introduction to Programming",
+          "Computer Architecture and Operating Systems 1"
+        ],
+        "semester_2": [
+          "Database Systems",
+          "Mathematics & Statistics",
+          "Introduction to Object Orientated Programming",
+          "Computer Architecture and Operating Systems 2"
+        ]
+      },
+      "year_2": {
+        "semester_1": [
+          "Database Programming",
+          "Network Fundamentals",
+          "Object Oriented Analysis and Design",
+          "Object Oriented Programming II",
+          "Python Scripting"
+        ],
+        "semester_2": [
+          "Data Warehousing for Business Analytics",
+          "Big Data Architecture",
+          "Algorithms & Data Structures",
+          "Machine Learning"
+        ]
+      },
+      "year_3": {
+        "semester_1": [
+          "Data Ethics and Governance",
+          "Project Management"
+        ],
+        "year_long": [
+          "Placement (40 credits)"
+        ],
+        "semester_2": [
+          "Reporting and Visualisation",
+          "Academic and Technical Writing Skills"
+        ]
+      },
+      "year_4": {
+        "semester_1": [
+          "Software Engineering",
+          "Natural Language Processing",
+          "Research in Computing with Emerging Technologies",
+          "Data Analytics"
+        ],
+        "semester_2": [
+          "Legal, Ethical and Social Issues in Computing",
+          "Computer Vision",
+          "Project Development",
+          "Predictive Modelling"
+        ]
+      }
+    },
+    "modules_note": "Partial — full module list at programme URL",
+    "work_placement": true,
+    "programme_url": "https://www.atu.ie/courses/bachelor-of-science-honours-computing-and-artificial-intelligence"
+  },
+  {
+    "name": "BSc Computing (Applied Computing)",
+    "full_name": "BSc (Hons) in Computing (Applied Computing)",
+    "institution": "ATU Donegal",
+    "institution_full": "Atlantic Technological University (ATU) — Donegal",
+    "location": "Donegal (Letterkenny)",
+    "cao_code": "AU360",
+    "cao_points": 353,
+    "award": "BSc (Hons)",
+    "nfq_level": 8,
+    "stages": 4,
+    "x": 7,
+    "y": 3,
+    "type": "tu",
+    "note": "",
+    "modules": {
+      "year_1": {
+        "semester_1": [
+          "Introduction to Programming",
+          "Mathematics for Computing I",
+          "Computer Architecture and Operating Systems 1",
+          "Personal and Professional Development",
+          "Web Fundamentals"
+        ],
+        "semester_2": [
+          "Introduction to Object Orientated Programming",
+          "Database Systems",
+          "Computer Architecture and Operating Systems 2",
+          "Scripting Python",
+          "Introduction to Cloud and Mobile Technologies"
+        ]
+      },
+      "year_2": {
+        "semester_1": [
+          "Object Oriented Programming II",
+          "Mathematics for Computing II",
+          "Network Fundamentals",
+          "Interaction Design",
+          "Client Side Scripting"
+        ],
+        "semester_2": [
+          "API Development",
+          "Algorithms & Data Structures",
+          "Database Programming",
+          "Network Services",
+          "Commercial Programming 1",
+          "Client Side Development"
+        ]
+      },
+      "year_3": {
+        "semester_1": [
+          "Elective: Software Implementation / Object Oriented Analysis and Design / Academic and Technical Writing Skills / Integrated Infrastructure / Commercial Programming II / Server Side Programming / International Placement"
+        ],
+        "semester_2": [
+          "Secure Programming",
+          "Project Management",
+          "Data Analytics",
+          "Team Project",
+          "ASP.Net Development",
+          "Web Development and Libraries"
+        ]
+      },
+      "year_4": {
+        "semester_1": [
+          "Software Engineering",
+          "Research in Computing with Emerging Technologies",
+          "Cross Platform Development",
+          "Web Component Development",
+          "Elective: Advanced Algorithms and Data Structures / DevOps"
+        ],
+        "semester_2": [
+          "UX Design",
+          "Legal, Ethical and Social Issues in Computing",
+          "Project Development",
+          "Data Science & AI",
+          "Web Framework Development"
+        ]
+      }
+    },
+    "modules_note": "Partial — full module list at programme URL",
+    "work_placement": true,
+    "programme_url": "https://www.atu.ie/courses/bachelor-of-science-honours-computing-in-applied-computing"
+  },
+  {
+    "name": "Computing",
+    "full_name": "Computing",
+    "institution": "DBS",
+    "institution_full": "Dublin Business School (DBS)",
+    "location": "Dublin",
+    "cao_code": "DB500",
+    "cao_points": 398,
+    "award": "BSc (Hons)",
+    "nfq_level": 8,
+    "stages": 4,
+    "x": 6,
+    "y": 2,
+    "type": "other",
+    "note": "",
+    "modules": {
+      "year_1": {
+        "semester_1": [
+          "Computer Architecture",
+          "Fundamentals of Information Systems",
+          "Information and Communication Technology Essentials",
+          "Introduction to Cloud Computing",
+          "Introduction to Web Development",
+          "Logic & Problem Solving",
+          "Mathematics and Statistics for Computing",
+          "Programming Fundamentals"
+        ]
+      },
+      "year_2": {
+        "semester_1": [
+          "Algorithms and Data Structures",
+          "Data Communications & Networks",
+          "Database Systems",
+          "IT Project Management",
+          "Object-Orientated Programming",
+          "Operating Systems",
+          "Software Engineering",
+          "Web Development"
+        ]
+      },
+      "year_3": {
+        "note": "Year 3 consists of work placement",
+        "semester_1": [
+          "Advanced Web Development",
+          "Foundations in Data Science",
+          "Systems Analysis & Design",
+          "Work Placement / Project"
+        ]
+      },
+      "year_4": {
+        "semester_1": [
+          "Cyber Security",
+          "Data Mining & Big Data Analytics",
+          "Enterprise Data Analytics",
+          "Project"
+        ]
+      }
+    },
+    "modules_note": "Module list not publicly available — see programme URL",
+    "work_placement": false,
+    "programme_url": "https://www.dbs.ie/course/full-time-undergraduate/bsc-(hons)-in-computing"
+  },
+  {
+    "name": "BSc Software Design with Digitalisation",
+    "full_name": "BSc (Hons) in Software Design with Digitalisation",
+    "institution": "TUS",
+    "institution_full": "Technological University of the Shannon (TUS)",
+    "location": "Athlone",
+    "cao_code": "US823",
+    "cao_points": null,
+    "award": "BSc (Hons)",
+    "nfq_level": 8,
+    "stages": 4,
+    "x": 7,
+    "y": 3,
+    "type": "tu",
+    "note": "",
+    "modules": {
+      "year_1": {
+        "semester_1": [
+          "Digitalisation for Connected Devices 1.1",
+          "Web App Development with AI 1.1",
+          "Mathematics for Software Design 1.1",
+          "Communication for University",
+          "Software Development 1.1",
+          "Game Development and Immersive Technology 1.1"
+        ],
+        "semester_2": [
+          "Digitalisation for Connected Devices 1.2",
+          "Web App Development with AI 1.2",
+          "Mathematics for Software Design 1.2",
+          "Communication for Engineering",
+          "Software Development 1.2",
+          "Game Development and Immersive Technology 1.2"
+        ]
+      },
+      "year_2": {
+        "semester_1": [
+          "Software Development 2.1",
+          "Agile Methodologies 2.1",
+          "Mathematics for Software Design 2.1",
+          "Connected Devices 2.1",
+          "Databases 2",
+          "Software Development for Connected Devices 2.1"
+        ],
+        "semester_2": [
+          "Software Development for Connected Devices 2.2",
+          "Software Development 2.2",
+          "Agile Methodologies 2.2",
+          "Mathematics for Software Design 2.2"
+        ]
+      },
+      "year_3": {
+        "semester_1": [
+          "Software Engineering 3",
+          "Software Development for Connected Devices 3",
+          "Visualisation for Digital Transformation 3",
+          "Networks 3",
+          "Web Development 3",
+          "Software Development 3",
+          "Placement Preparation 3"
+        ],
+        "semester_2": [
+          "Placement for Software Design 3 (25 credits)"
+        ]
+      },
+      "year_4": {
+        "semester_1": [
+          "Project 4 — year long (15 credits)",
+          "Management and Organisational Behaviour 4",
+          "Networks 4",
+          "Digitalisation for Connected Devices 4.1",
+          "Data Mining and Machine Learning 4",
+          "Database Architecture and Design 4.1"
+        ],
+        "semester_2": [
+          "Project 4 — year long (continued)",
+          "The Engineer in Society 4",
+          "Digitalisation for Connected Devices 4.2",
+          "Security 4",
+          "Database Architecture and Design 4.2"
+        ]
+      }
+    },
+    "modules_note": "IoT and connected devices focus — full module list at programme URL",
+    "work_placement": true,
+    "programme_url": "https://tus.ie/courses/us823/"
+  },
+  {
+    "name": "BSc Software Design with AI for Cloud",
+    "full_name": "BSc (Hons) in Software Design with Artificial Intelligence for Cloud Computing",
+    "institution": "TUS",
+    "institution_full": "Technological University of the Shannon (TUS)",
+    "location": "Limerick (Moylish)",
+    "cao_code": "US822",
+    "cao_points": null,
+    "award": "BSc (Hons)",
+    "nfq_level": 8,
+    "stages": 4,
+    "x": 7,
+    "y": 1,
+    "type": "tu",
+    "note": "",
+    "modules": [],
+    "modules_note": "Specialises in AI and Cloud — full module list at programme URL",
+    "work_placement": true,
+    "programme_url": "https://tus.ie/courses/us822/"
+  },
+  {
+    "name": "BSc Creative Computing — current",
     "full_name": "BSc (Hons) Creative Computing",
     "institution": "IADT",
     "institution_full": "IADT (Institute of Art, Design + Technology)",
-    "location": "D\u00fan Laoghaire, Co. Dublin",
+    "location": "Dún Laoghaire, Co. Dublin",
     "cao_code": "DL836",
     "cao_points": 227,
     "award": "BSc (Hons)",
@@ -1223,7 +1625,7 @@
     "x": 6,
     "y": 8,
     "type": "iadt",
-    "note": "Technical depth scored at 6: students write real code across all four years \u2014 programming, databases, APIs, full-stack projects, cloud and networking. Scored below the main cluster (7\u201310) as the programme does not include the depth of CS theory present in university degrees \u2014 algorithms at scale, systems programming, compilers, formal methods. Creative and design outputs are the dominant programme identity.",
+    "note": "Technical depth scored at 6: students write real code across all four years — programming, databases, APIs, full-stack projects, cloud and networking. Scored below the main cluster (7–10) as the programme does not include the depth of CS theory present in university degrees — algorithms at scale, systems programming, compilers, formal methods. Creative and design outputs are the dominant programme identity.",
     "modules": {
       "year_1": {
         "semester_1": [
@@ -1290,11 +1692,11 @@
     "programme_url": "https://iadt.ie/courses/creative-computing/"
   },
   {
-    "name": "New degree \u2014 proposed",
-    "full_name": "New Degree \u2014 Proposed",
+    "name": "New degree — proposed",
+    "full_name": "New Degree — Proposed",
     "institution": "IADT",
     "institution_full": "IADT (Institute of Art, Design + Technology)",
-    "location": "D\u00fan Laoghaire, Co. Dublin",
+    "location": "Dún Laoghaire, Co. Dublin",
     "cao_code": "",
     "cao_points": null,
     "award": "BSc (Hons)",

@@ -129,6 +129,7 @@
   --tooltip-max-w:   240px;
   --measure-prose:   72ch;
   --measure-desc:    48ch;
+  --grid-min:        30ch;
 }
 
 /* ── Dark mode – token overrides only ── */
@@ -209,6 +210,13 @@ h1, h2, h3, h4 {
 }
 
 a { color: inherit; }
+
+a:active { color: var(--color-accent); }
+
+::selection {
+  background-color: var(--color-accent);
+  color: var(--color-text-on-accent);
+}
 
 img, canvas, svg { display: block; max-inline-size: 100%; }
 
@@ -294,6 +302,13 @@ img, canvas, svg { display: block; max-inline-size: 100%; }
 /* Flow – prose rhythm */
 .flow > * + * {
   margin-block-start: var(--flow-space, var(--space-m));
+}
+
+/* Grid – auto-responsive RAM columns */
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(min(var(--grid-min), 100%), 1fr));
+  gap: var(--grid-gap, var(--space-m));
 }
 
 
@@ -717,7 +732,7 @@ img, canvas, svg { display: block; max-inline-size: 100%; }
 
 /* Placeholder rows – faded, non-interactive */
 .prog-row[data-status="placeholder"] {
-  opacity: 0.4;
+  opacity: 0.35;
   pointer-events: none;
   cursor: default;
 }
@@ -867,6 +882,77 @@ img, canvas, svg { display: block; max-inline-size: 100%; }
   text-transform: uppercase;
 }
 
+/* ── Argument page ── */
+
+/* H1 from markdown is suppressed – page-header already establishes context */
+.argument-body h1 { display: none; }
+
+/* Lede – large editorial opening statement, constrained for readability */
+.argument-body > p:first-of-type {
+  font-size: var(--step-3);
+  font-weight: var(--weight-light);
+  color: var(--color-text);
+  line-height: var(--lh-snug);
+  letter-spacing: var(--tracking-tight);
+  max-inline-size: var(--measure-prose);
+}
+
+.argument-body h2 {
+  font-size: var(--step-1);
+  font-weight: var(--weight-medium);
+  letter-spacing: var(--tracking-caps);
+  text-transform: uppercase;
+  color: var(--color-text);
+  margin-block-start: var(--space-xl);
+  margin-block-end: var(--space-m);
+  padding-block-end: var(--space-xs);
+  border-block-end: var(--border-thin);
+}
+
+.argument-body p { color: var(--color-muted); line-height: var(--lh-body); }
+
+/* RAM grid — auto-responsive columns, wider screens get more columns */
+.argument-body ul {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(min(var(--grid-min), 100%), 1fr));
+  gap: var(--space-m);
+  list-style: none;
+}
+
+.argument-body ul li {
+  color: var(--color-muted);
+  line-height: var(--lh-body);
+  padding-inline-start: var(--space-s);
+  padding-block-end: var(--space-s);
+  border-inline-start: var(--border-thin);
+}
+
+/* Attribution line – smaller, lighter than the description */
+.argument-body ul li p + p {
+  font-size: var(--step--1);
+  font-weight: var(--weight-light);
+  margin-block-start: var(--space-2xs);
+}
+
+.argument-body a {
+  color: var(--color-accent);
+  text-decoration: none;
+  display: inline-flex;
+  align-items: center;
+  gap: var(--space-2xs);
+}
+
+.argument-body a::after {
+  content: "↗";
+  display: inline-block;
+  font-size: 0.8em;
+  transition: transform var(--duration-normal) var(--ease-out);
+}
+
+.argument-body a:hover { text-decoration: underline; }
+
+.argument-body a:hover::after { transform: translate(2px, -2px); }
+
 /* ── Nav list (index page) ── */
 .nav-list { list-style: none; }
 
@@ -930,15 +1016,21 @@ img, canvas, svg { display: block; max-inline-size: 100%; }
 
 @media (min-width: 600px) { .nav-link__subtitle { display: block; } }
 
-.nav-item:hover .nav-link__subtitle,
-.nav-item:focus-within .nav-link__subtitle { opacity: 0.55; }
-
-.nav-item:hover .nav-link__number,
-.nav-item:focus-within .nav-link__number   { opacity: 0.45; }
-
 /* Force dark text on accent-green hover fill in both modes */
 .nav-item:hover .nav-link,
-.nav-item:focus-within .nav-link { color: var(--color-text-on-accent, #0a0a0a); }
+.nav-item:focus-within .nav-link { color: var(--color-text-on-accent); }
+
+.nav-item:hover .nav-link__subtitle,
+.nav-item:focus-within .nav-link__subtitle {
+  color: var(--color-text-on-accent);
+  opacity: 0.6;
+}
+
+.nav-item:hover .nav-link__number,
+.nav-item:focus-within .nav-link__number {
+  color: var(--color-text-on-accent);
+  opacity: 0.45;
+}
 
 /* Coming-soon nav item – visible but not interactive */
 .nav-item[aria-disabled="true"] {
