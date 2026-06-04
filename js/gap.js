@@ -309,6 +309,8 @@
 
     tbody.innerHTML = sortedData.map(d => {
       const rowId = `row-${d.name.replace(/[^a-z0-9]/gi, "-").toLowerCase()}`;
+      const isPlaceholder = d.type === "proposed" ||
+        (d.institution === "DBS" && d.name === "Computing (Data Analytics)");
 
       const xBar = `
         <div class="score-bar">
@@ -370,8 +372,9 @@
           data-prog-type="${d.type}"
           data-has-note="${d.note ? "true" : "false"}"
           data-open="false"
-          tabindex="0"
-          aria-expanded="false"
+          ${isPlaceholder ? 'data-status="placeholder"' : ''}
+          tabindex="${isPlaceholder ? '-1' : '0'}"
+          ${isPlaceholder ? '' : 'aria-expanded="false"'}
         >
           <td class="prog-cell prog-cell--name">
             <span class="prog-summary__name">${d.name}</span>
