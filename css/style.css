@@ -375,7 +375,7 @@ img, canvas, svg { display: block; max-inline-size: 100%; }
 
 .back-link:hover { color: var(--color-text); }
 
-/* Arrow animates right on hover */
+/* Arrow animates left on hover */
 .back-link .arrow {
   display: inline-block;
   transition: transform var(--duration-normal) var(--ease-out);
@@ -432,6 +432,8 @@ img, canvas, svg { display: block; max-inline-size: 100%; }
   max-inline-size: var(--measure-desc);
   align-self: flex-end;
 }
+
+.page-header > :first-child { flex: 1; }
 
 /* ── Methodology disclosure ── */
 .methodology {
