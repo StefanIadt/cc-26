@@ -489,8 +489,10 @@ img, canvas, svg { display: block; max-inline-size: 100%; }
   padding: var(--space-m);
   border-block-start: var(--border-thin);
   background: var(--color-surface);
-  max-inline-size: var(--measure-prose);
 }
+
+/* Two equal columns when body is wide enough */
+.methodology__body.switcher { --switcher-threshold: 60rem; }
 
 /* .flow handles paragraph spacing */
 .methodology__body p { color: var(--color-muted); }
@@ -506,6 +508,11 @@ img, canvas, svg { display: block; max-inline-size: 100%; }
 
 /* ── Matrix figure ── */
 .matrix-figure { position: relative; }
+
+.matrix-figure canvas {
+  inline-size: 100%;
+  aspect-ratio: 3 / 2;
+}
 
 /* ── Tooltip ── */
 .tooltip {
@@ -716,15 +723,19 @@ img, canvas, svg { display: block; max-inline-size: 100%; }
   --stack-space: var(--space-m);
 }
 
-/* Meta uses cluster composition */
+/* Meta uses switcher for two equal columns */
 .prog-panel__meta {
-  --cluster-space: var(--space-m);
+  --switcher-threshold: 40rem;
+}
+
+.prog-panel__meta .stack {
+  --stack-space: var(--space-s);
 }
 
 .prog-panel__meta-item {
   display: flex;
   flex-direction: column;
-  gap: var(--space-3xs);
+  gap: 0;
 }
 
 .prog-panel__meta-label {

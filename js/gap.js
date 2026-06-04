@@ -53,6 +53,8 @@
 
   /* ── Draw ── */
   function draw() {
+    canvas.width  = canvas.offsetWidth  || 1200;
+    canvas.height = canvas.offsetHeight || Math.round(canvas.offsetWidth * 2 / 3);
     const W = canvas.width, H = canvas.height, sc = W / 1200;
 
     ctx.clearRect(0, 0, W, H);
@@ -326,26 +328,30 @@
 
       const panel = `
         <div class="prog-panel">
-          <dl class="prog-panel__meta">
-            <div class="prog-panel__meta-item">
-              <dt class="prog-panel__meta-label">Full name</dt>
-              <dd class="prog-panel__meta-value">${d.full_name}</dd>
+          <dl class="prog-panel__meta switcher">
+            <div class="stack">
+              <div class="prog-panel__meta-item">
+                <dt class="prog-panel__meta-label">Full name</dt>
+                <dd class="prog-panel__meta-value">${d.full_name}</dd>
+              </div>
+              <div class="prog-panel__meta-item">
+                <dt class="prog-panel__meta-label">Award</dt>
+                <dd class="prog-panel__meta-value">${d.award || "BSc (Hons)"}</dd>
+              </div>
             </div>
-            <div class="prog-panel__meta-item">
-              <dt class="prog-panel__meta-label">Location</dt>
-              <dd class="prog-panel__meta-value">${d.location || "–"}</dd>
-            </div>
-            <div class="prog-panel__meta-item">
-              <dt class="prog-panel__meta-label">Award</dt>
-              <dd class="prog-panel__meta-value">${d.award || "BSc (Hons)"}</dd>
-            </div>
-            <div class="prog-panel__meta-item">
-              <dt class="prog-panel__meta-label">CAO code</dt>
-              <dd class="prog-panel__meta-value">${d.cao_code || "–"}</dd>
-            </div>
-            <div class="prog-panel__meta-item">
-              <dt class="prog-panel__meta-label">Placement</dt>
-              <dd class="prog-panel__meta-value">${d.work_placement ? "Yes" : "No"}</dd>
+            <div class="stack">
+              <div class="prog-panel__meta-item">
+                <dt class="prog-panel__meta-label">Location</dt>
+                <dd class="prog-panel__meta-value">${d.location || "–"}</dd>
+              </div>
+              <div class="prog-panel__meta-item">
+                <dt class="prog-panel__meta-label">CAO code</dt>
+                <dd class="prog-panel__meta-value">${d.cao_code || "–"}</dd>
+              </div>
+              <div class="prog-panel__meta-item">
+                <dt class="prog-panel__meta-label">Placement</dt>
+                <dd class="prog-panel__meta-value">${d.work_placement ? "Yes" : "No"}</dd>
+              </div>
             </div>
           </dl>
           ${d.note ? `<p class="prog-panel__note">${d.note}</p>` : ""}

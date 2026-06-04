@@ -58,42 +58,46 @@
       </span>
       <span class="methodology__toggle" aria-hidden="true">+</span>
     </summary>
-    <div class="methodology__body flow">
-      <p>
-        Each of the 37 programmes was scored 1–10 on two axes, based on a review
-        of publicly available module lists, programme descriptions and learning
-        outcomes. Scores reflect the overall character of the degree – not the
-        presence or absence of any single module.
-      </p>
-      <p>
-        <strong>Technical depth (X axis)</strong> measures how much of the degree
-        is dedicated to writing, understanding and debugging real code –
-        programming languages, data structures and algorithms, systems programming,
-        networking, databases and computer architecture. A score of
-        <strong>9–10</strong> indicates significant CS theory: compilers, formal
-        methods, concurrent systems. A score of <strong>7–8</strong> indicates
-        strong applied programming. A score of <strong>5–6</strong> indicates solid
-        coding foundations where programming is not the dominant activity.
-      </p>
-      <p>
-        <strong>Creative ambition (Y axis)</strong> measures how much of the degree
-        explicitly teaches design thinking, visual communication, human-centred
-        process, prototyping and critique culture. A token UX or HCI module does
-        not raise this score. A score of <strong>7–8</strong> requires design to be
-        a named, sustained pillar across multiple years.
-      </p>
-      <p>
-        <strong>* IADT Creative Computing</strong> is scored
-        <strong>6 for technical depth</strong>. Students write real code across all
-        four years – programming, databases, APIs, full-stack projects, cloud and
-        networking. The score is not higher because the programme lacks the CS
-        theory depth of university degrees: algorithms at scale, systems
-        programming, compilers and formal methods.
-      </p>
-      <p>
-        Dot size encodes CAO points (2025 or most recent available). Click any
-        programme row in the table below to expand its module list.
-      </p>
+    <div class="methodology__body switcher">
+      <div class="flow">
+        <p>
+          Each of the 37 programmes was scored 1–10 on two axes, based on a review
+          of publicly available module lists, programme descriptions and learning
+          outcomes. Scores reflect the overall character of the degree – not the
+          presence or absence of any single module.
+        </p>
+        <p>
+          <strong>Technical depth (X axis)</strong> measures how much of the degree
+          is dedicated to writing, understanding and debugging real code –
+          programming languages, data structures and algorithms, systems programming,
+          networking, databases and computer architecture. A score of
+          <strong>9–10</strong> indicates significant CS theory: compilers, formal
+          methods, concurrent systems. A score of <strong>7–8</strong> indicates
+          strong applied programming. A score of <strong>5–6</strong> indicates solid
+          coding foundations where programming is not the dominant activity.
+        </p>
+      </div>
+      <div class="flow">
+        <p>
+          <strong>Creative ambition (Y axis)</strong> measures how much of the degree
+          explicitly teaches design thinking, visual communication, human-centred
+          process, prototyping and critique culture. A token UX or HCI module does
+          not raise this score. A score of <strong>7–8</strong> requires design to be
+          a named, sustained pillar across multiple years.
+        </p>
+        <p>
+          <strong>* IADT Creative Computing</strong> is scored
+          <strong>6 for technical depth</strong>. Students write real code across all
+          four years – programming, databases, APIs, full-stack projects, cloud and
+          networking. The score is not higher because the programme lacks the CS
+          theory depth of university degrees: algorithms at scale, systems
+          programming, compilers and formal methods.
+        </p>
+        <p>
+          Dot size encodes CAO points (2025 or most recent available). Click any
+          programme row in the table below to expand its module list.
+        </p>
+      </div>
     </div>
   </details>
 
@@ -120,8 +124,6 @@
 
         <canvas
           id="matrix"
-          width="1200"
-          height="800"
           role="img"
           aria-label="Scatter plot of 37 Irish computing degrees on two axes: technical depth (x) and creative ambition (y). Almost all programmes cluster bottom-right – high technical, low creative. IADT Creative Computing sits top-left. The proposed new degree sits top-right, a position no other programme occupies."
         >
