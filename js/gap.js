@@ -1,5 +1,5 @@
 /* ============================================================
-   IADT DEGREE PROPOSAL — GAP PAGE
+   IADT DEGREE PROPOSAL – GAP PAGE
    Canvas matrix, tooltip, sortable table
    Depends on: data/programmes.json
 ============================================================ */
@@ -9,13 +9,13 @@
   /* ── Load data ── */
   const DATA = await fetch("data/programmes.json").then(r => r.json());
 
-  /* ── Read CSS tokens — single source of truth ── */
+  /* ── Read CSS tokens – single source of truth ── */
   const styles = getComputedStyle(document.documentElement);
   const token  = name => styles.getPropertyValue(name).trim();
 
   const dark = window.matchMedia("(prefers-color-scheme: dark)").matches;
 
-  /* Dot colours read from CSS custom properties — no hardcoding */
+  /* Dot colours read from CSS custom properties – no hardcoding */
   function dotColor(type) {
     const map = {
       university: token("--color-dot-university"),
@@ -77,8 +77,8 @@
     const zy1 = plotCoords(1, 10, W, H).cy - 2;
     const zy2 = plotCoords(1, 5.5, W, H).cy;
 
-    ctx.fillStyle   = dark ? "rgba(200,255,0,0.04)" : "rgba(200,255,0,0.12)"; /* accent tint — no token for alpha variants */
-    ctx.strokeStyle = dark ? "rgba(200,255,0,0.18)" : "rgba(160,200,0,0.5)"; /* accent stroke — no token for alpha variants */
+    ctx.fillStyle   = dark ? "rgba(200,255,0,0.04)" : "rgba(200,255,0,0.12)"; /* accent tint – no token for alpha variants */
+    ctx.strokeStyle = dark ? "rgba(200,255,0,0.18)" : "rgba(160,200,0,0.5)"; /* accent stroke – no token for alpha variants */
     ctx.lineWidth   = 1 * sc;
     ctx.setLineDash([4 * sc, 4 * sc]);
     ctx.beginPath();
@@ -89,7 +89,7 @@
 
     /* Zone label */
     ctx.font      = `500 ${11 * sc}px Inter, system-ui, sans-serif`;
-    ctx.fillStyle = dark ? "rgba(200,255,0,0.5)" : "rgba(70,90,0,0.5)"; /* zone label — alpha variant */
+    ctx.fillStyle = dark ? "rgba(200,255,0,0.5)" : "rgba(70,90,0,0.5)"; /* zone label – alpha variant */
     ctx.textAlign = "right";
     ctx.fillText("unoccupied", (W - PAD.right) - 6 * sc, PAD.top + 18 * sc);
 
@@ -117,7 +117,7 @@
     ctx.fillText("← CREATIVE AMBITION", 0, 0);
     ctx.restore();
 
-    /* Dots — render in type order so IADT/proposed render on top */
+    /* Dots – render in type order so IADT/proposed render on top */
     const ORDER = ["university", "tu", "other", "iadt", "proposed"];
     [...DATA]
       .sort((a, b) => ORDER.indexOf(a.type) - ORDER.indexOf(b.type))
@@ -333,7 +333,7 @@
             </div>
             <div class="prog-panel__meta-item">
               <dt class="prog-panel__meta-label">Location</dt>
-              <dd class="prog-panel__meta-value">${d.location || "—"}</dd>
+              <dd class="prog-panel__meta-value">${d.location || "–"}</dd>
             </div>
             <div class="prog-panel__meta-item">
               <dt class="prog-panel__meta-label">Award</dt>
@@ -341,7 +341,7 @@
             </div>
             <div class="prog-panel__meta-item">
               <dt class="prog-panel__meta-label">CAO code</dt>
-              <dd class="prog-panel__meta-value">${d.cao_code || "—"}</dd>
+              <dd class="prog-panel__meta-value">${d.cao_code || "–"}</dd>
             </div>
             <div class="prog-panel__meta-item">
               <dt class="prog-panel__meta-label">Placement</dt>
@@ -371,7 +371,7 @@
             <span class="prog-summary__name">${d.name}</span>
           </td>
           <td class="prog-cell prog-cell--inst">${d.institution}</td>
-          <td class="prog-cell prog-cell--cao">${d.cao_points ?? "—"}</td>
+          <td class="prog-cell prog-cell--cao">${d.cao_points ?? "–"}</td>
           <td class="prog-cell">${xBar}</td>
           <td class="prog-cell">${yBar}</td>
         </tr>

@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="The gap in Irish computing education — a landscape analysis of 37 degree programmes.">
+  <meta name="description" content="The gap in Irish computing education – a landscape analysis of 37 degree programmes.">
   <title>The Gap – CC 26</title>
   <link rel="stylesheet" href="https://rsms.me/inter/inter.css">
   <link rel="stylesheet" href="css/style.css">
@@ -15,14 +15,14 @@
   <!--
     SITE HEADER
     Back link left, wordmark right.
-    margin-inline-start:auto on .wordmark pushes it right — no empty spacer elements.
+    margin-inline-start:auto on .wordmark pushes it right – no empty spacer elements.
   -->
   <header class="site-header">
     <a class="back-link" href="index.html" aria-label="Back to CC 26 home">
       <span class="arrow" aria-hidden="true">←</span>
       <span>Home</span>
     </a>
-    <a class="wordmark" href="index.html" aria-label="CC 26 — home">
+    <a class="wordmark" href="index.html" aria-label="CC 26 – home">
       <span class="wordmark__name">CC</span>
       <span class="wordmark__sub">26</span>
     </a>
@@ -39,14 +39,14 @@
       <h1 class="page-header__title">The gap</h1>
     </div>
     <p class="page-header__desc">
-      Every Irish computing degree clusters in the same place — deep technical,
+      Every Irish computing degree clusters in the same place – deep technical,
       low creative ambition. The space IADT could occupy is empty.
     </p>
   </div>
 
   <!--
     METHODOLOGY DISCLOSURE
-    Native <details>/<summary> — keyboard accessible, no JS.
+    Native <details>/<summary> – keyboard accessible, no JS.
     Collapsed by default so diagram leads.
     Toggle indicator uses CSS transform, not swapped content.
   -->
@@ -62,12 +62,12 @@
       <p>
         Each of the 37 programmes was scored 1–10 on two axes, based on a review
         of publicly available module lists, programme descriptions and learning
-        outcomes. Scores reflect the overall character of the degree — not the
+        outcomes. Scores reflect the overall character of the degree – not the
         presence or absence of any single module.
       </p>
       <p>
         <strong>Technical depth (X axis)</strong> measures how much of the degree
-        is dedicated to writing, understanding and debugging real code —
+        is dedicated to writing, understanding and debugging real code –
         programming languages, data structures and algorithms, systems programming,
         networking, databases and computer architecture. A score of
         <strong>9–10</strong> indicates significant CS theory: compilers, formal
@@ -85,7 +85,7 @@
       <p>
         <strong>* IADT Creative Computing</strong> is scored
         <strong>6 for technical depth</strong>. Students write real code across all
-        four years — programming, databases, APIs, full-stack projects, cloud and
+        four years – programming, databases, APIs, full-stack projects, cloud and
         networking. The score is not higher because the programme lacks the CS
         theory depth of university degrees: algorithms at scale, systems
         programming, compilers and formal methods.
@@ -106,7 +106,7 @@
     <!--
       MATRIX VISUALISATION
       <figure> groups the canvas and its legend as a semantic unit.
-      The canvas is a progressive enhancement — the data table below
+      The canvas is a progressive enhancement – the data table below
       is the primary accessible content.
       Screen readers get the aria-label on canvas plus the text fallback inside it.
     -->
@@ -123,7 +123,7 @@
           width="1200"
           height="800"
           role="img"
-          aria-label="Scatter plot of 37 Irish computing degrees on two axes: technical depth (x) and creative ambition (y). Almost all programmes cluster bottom-right — high technical, low creative. IADT Creative Computing sits top-left. The proposed new degree sits top-right, a position no other programme occupies."
+          aria-label="Scatter plot of 37 Irish computing degrees on two axes: technical depth (x) and creative ambition (y). Almost all programmes cluster bottom-right – high technical, low creative. IADT Creative Computing sits top-left. The proposed new degree sits top-right, a position no other programme occupies."
         >
           <!--
             Text fallback for environments where canvas is unavailable.
@@ -132,13 +132,13 @@
           <p>
             Chart showing 37 Irish computing degrees. Most cluster bottom-right
             (high technical depth, low creative ambition). IADT Creative Computing
-            sits top-left. The proposed new degree targets the top-right —
+            sits top-left. The proposed new degree targets the top-right –
             currently unoccupied. See the full data table below.
           </p>
         </canvas>
 
         <!--
-          Tooltip — positioned absolute within figure.
+          Tooltip – positioned absolute within figure.
           aria-hidden toggled via JS when shown/hidden.
         -->
         <div
@@ -149,7 +149,7 @@
         ></div>
 
         <!--
-          Legend as figcaption — semantically describes the figure.
+          Legend as figcaption – semantically describes the figure.
           Uses .sidebar composition: items left (cluster), note right.
         -->
         <figcaption class="matrix-legend">
@@ -188,7 +188,7 @@
 
     <!--
       PROGRAMMES TABLE
-      Primary accessible content — full data for all 37 programmes.
+      Primary accessible content – full data for all 37 programmes.
       role="region" + tabindex="0" makes the scroll container keyboard-navigable.
       thead is sticky so headers remain visible when scrolling.
     -->

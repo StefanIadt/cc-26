@@ -1,5 +1,5 @@
 /* ============================================================
-   CC 26 — GLOBAL STYLESHEET
+   CC 26 – GLOBAL STYLESHEET
    Methodology:      CUBE CSS          (cube.fyi)
    Type + space:     Utopia            (utopia.fyi)
    Layout:           Every Layout      (every-layout.dev)
@@ -62,7 +62,7 @@
   --weight-medium:  500;
   --weight-bold:    700;
 
-  /* Line heights — ratio-based (piccalil.li/blog/line-heights-in-css-work-better-with-ratios)
+  /* Line heights – ratio-based (piccalil.li/blog/line-heights-in-css-work-better-with-ratios)
      Each value is a unitless ratio. The browser multiplies by font-size automatically.
      Use --lh-flat for display text, --lh-tight for headings, --lh-body for prose. */
   --lh-flat:  1;
@@ -77,7 +77,7 @@
   --tracking-tight:   -0.02em;
   --tracking-display: -0.03em;
 
-  /* ── Colour — light mode ── */
+  /* ── Colour – light mode ── */
   --color-bg:      #f7f6f3;
   --color-surface: #ffffff;
   --color-text:    #0a0a0a;
@@ -87,7 +87,7 @@
   --color-orange:  #ff6b00;
   --color-focus:   #0055cc;
 
-  /* Tinted surface variants — derived from brand colours */
+  /* Tinted surface variants – derived from brand colours */
   --color-surface-iadt:     #EEEDFE;
   --color-surface-proposed: #f5ffd0;
 
@@ -128,7 +128,7 @@
   --measure-desc:    48ch;
 }
 
-/* ── Dark mode — token overrides only ── */
+/* ── Dark mode – token overrides only ── */
 @media (prefers-color-scheme: dark) {
   :root {
     --color-bg:      #111110;
@@ -160,7 +160,7 @@
 
 /* ------------------------------------------------------------
    BASE
-   Minimal — let the browser and cascade do their job
+   Minimal – let the browser and cascade do their job
 ------------------------------------------------------------ */
 
 html {
@@ -179,7 +179,7 @@ body {
   padding-inline: var(--site-padding);
 }
 
-/* Headings inherit line-height from context — ratio does the work */
+/* Headings inherit line-height from context – ratio does the work */
 h1, h2, h3, h4 {
   line-height: var(--lh-tight);
   font-weight: var(--weight-regular);
@@ -200,10 +200,10 @@ img, canvas, svg { display: block; max-inline-size: 100%; }
 
 /* ------------------------------------------------------------
    COMPOSITION
-   Layout only — no colour, type or decoration
+   Layout only – no colour, type or decoration
 ------------------------------------------------------------ */
 
-/* Stack — vertical flow */
+/* Stack – vertical flow */
 .stack {
   display: flex;
   flex-direction: column;
@@ -211,7 +211,7 @@ img, canvas, svg { display: block; max-inline-size: 100%; }
   gap: var(--stack-space, var(--space-m));
 }
 
-/* Cluster — horizontal wrapping */
+/* Cluster – horizontal wrapping */
 .cluster {
   display: flex;
   flex-wrap: wrap;
@@ -219,7 +219,7 @@ img, canvas, svg { display: block; max-inline-size: 100%; }
   align-items: var(--cluster-align, center);
 }
 
-/* Sidebar — two-column, stacks below threshold */
+/* Sidebar – two-column, stacks below threshold */
 .sidebar {
   display: flex;
   flex-wrap: wrap;
@@ -237,7 +237,7 @@ img, canvas, svg { display: block; max-inline-size: 100%; }
   min-inline-size: var(--sidebar-content-min, 20ch);
 }
 
-/* Switcher — single col below threshold */
+/* Switcher – single col below threshold */
 .switcher {
   display: flex;
   flex-wrap: wrap;
@@ -249,7 +249,7 @@ img, canvas, svg { display: block; max-inline-size: 100%; }
   flex-basis: calc((var(--switcher-threshold, 40rem) - 100%) * 999);
 }
 
-/* Cover — fills viewport */
+/* Cover – fills viewport */
 .cover {
   display: flex;
   flex-direction: column;
@@ -268,7 +268,7 @@ img, canvas, svg { display: block; max-inline-size: 100%; }
   min-block-size: 100svh;
 }
 
-/* Flow — prose rhythm */
+/* Flow – prose rhythm */
 .flow > * + * {
   margin-block-start: var(--flow-space, var(--space-m));
 }
