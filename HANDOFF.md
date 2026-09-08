@@ -9,9 +9,9 @@ The site has four sections:
 | # | Page | Status | Purpose |
 |---|------|--------|---------|
 | 01 | The gap | Built, needs minor fixes | Landscape analysis of 37 Irish computing degrees |
-| 02 | The argument | Not built | The case for the degree — "developers with taste" |
+| 02 | The argument | Built | The case for the degree — "developers with taste" |
 | 03 | The structure | Not built | Sprint-based Level 8 programme structure |
-| 04 | The model | Not built | FDND-inspired framework adapted for IADT |
+| 04 | The model | Built | Deliverables-first framework adapted for IADT |
 
 ---
 
@@ -32,15 +32,20 @@ No npm. No Webpack. No React. Open `index.html` in a browser via Live Server and
 CC_26/
   index.html              ← Home / navigation
   01-gap.html             ← The gap page
-  02-argument.html        ← Not built yet
+  02-argument.html        ← The argument page
   03-structure.html       ← Not built yet
-  04-model.html           ← Not built yet
+  04-model.html           ← The model page
   css/
     style.css             ← Single shared stylesheet — all pages link here
   js/
     gap.js                ← Gap page logic: canvas, tooltip, table, sort
+    argument.js           ← Argument page: fetches + renders data/argument.md
+    model.js               ← Model page: fetches + renders data/programme-model.md
+    theme.js               ← Dark/light theme toggle, shared across pages
   data/
     programmes.json       ← Single source of truth for all 37 degree records
+    argument.md            ← Source content for the argument page
+    programme-model.md     ← Source content for the model page
   HANDOFF.md              ← This file
 ```
 
@@ -229,9 +234,13 @@ This site is built accessibility-first, progressively enhanced.
 - [ ] Responsive check on the expanded programme panel at narrow widths
 
 ### Pages to build
-- [ ] `02-argument.html` — The argument ("developers with taste")
 - [ ] `03-structure.html` — The structure (sprint-based Level 8)
-- [ ] `04-model.html` — The model
+- [x] `04-model.html` — The model — built from `data/programme-model.md`, rendered client-side via marked.js (same pattern as `02-argument.html`)
+
+### Notes on 04-model.html
+- The doc's own title/subtitle/sub-subtitle (h1/h2/h3) are repurposed as the page tagline rather than hidden outright — h1 is suppressed, h2+h3 become a lede block under the page-header.
+- `js/model.js` post-processes the rendered markdown: wraps tables in `.table-scroll`, and flags bold-only label paragraphs (e.g. "**Staff**") with `.is-label` so they read as mini-headings. This is done in JS rather than CSS `:has(strong:only-child)` because that selector ignores sibling text nodes and false-matches "**Bold opener.** plus more text." paragraphs.
+- New CSS lives in the "Model page" block in `style.css`, scoped under `.model-body` — doesn't touch `.argument-body` rules.
 
 ### When building new pages
 - Link `css/style.css` and `js/[pagename].js`

@@ -13,7 +13,11 @@
   const styles = getComputedStyle(document.documentElement);
   const token  = name => styles.getPropertyValue(name).trim();
 
-  const dark = window.matchMedia("(prefers-color-scheme: dark)").matches;
+  /* dark() is called inside draw() so it reflects the current theme, not just page-load state */
+  function dark() {
+    const t = document.documentElement.dataset.theme;
+    return t === "dark" || (!t && window.matchMedia("(prefers-color-scheme: dark)").matches);
+  }
 
   /* Dot colours read from CSS custom properties – no hardcoding */
   function dotColor(type) {
@@ -51,6 +55,12 @@
     };
   }
 
+  /* ── URL highlight param ── */
+  const highlightKey = new URLSearchParams(location.search).get('q');
+  const highlighted  = highlightKey
+    ? DATA.find(function(d) { return d.cao_code === highlightKey || d.type === highlightKey; })
+    : null;
+
   /* ── Draw ── */
   function draw() {
     canvas.width  = canvas.offsetWidth  || 1200;
@@ -79,8 +89,8 @@
     const zy1 = plotCoords(1, 10, W, H).cy - 2;
     const zy2 = plotCoords(1, 5.5, W, H).cy;
 
-    ctx.fillStyle   = dark ? "rgba(200,255,0,0.04)" : "rgba(200,255,0,0.12)"; /* accent tint – no token for alpha variants */
-    ctx.strokeStyle = dark ? "rgba(200,255,0,0.18)" : "rgba(160,200,0,0.5)"; /* accent stroke – no token for alpha variants */
+    ctx.fillStyle   = dark() ? "rgba(200,255,0,0.04)" : "rgba(200,255,0,0.12)"; /* accent tint – no token for alpha variants */
+    ctx.strokeStyle = dark() ? "rgba(200,255,0,0.18)" : "rgba(160,200,0,0.5)"; /* accent stroke – no token for alpha variants */
     ctx.lineWidth   = 1 * sc;
     ctx.setLineDash([4 * sc, 4 * sc]);
     ctx.beginPath();
@@ -91,7 +101,7 @@
 
     /* Zone label */
     ctx.font      = `500 ${11 * sc}px Inter, system-ui, sans-serif`;
-    ctx.fillStyle = dark ? "rgba(200,255,0,0.5)" : "rgba(70,90,0,0.5)"; /* zone label – alpha variant */
+    ctx.fillStyle = dark() ? "rgba(200,255,0,0.5)" : "rgba(70,90,0,0.5)"; /* zone label – alpha variant */
     ctx.textAlign = "right";
     ctx.fillText("unoccupied", (W - PAD.right) - 6 * sc, PAD.top + 18 * sc);
 
@@ -109,12 +119,12 @@
     }
 
     /* Axis labels */
-    ctx.font      = `500 ${11 * sc}px Inter, system-ui, sans-serif`;
+    ctx.font      = `500 ${16 * sc}px Inter, system-ui, sans-serif`;
     ctx.fillStyle = token("--color-text");
     ctx.textAlign = "center";
-    ctx.fillText("TECHNICAL DEPTH →", W / 2, H - 12 * sc);
+    ctx.fillText("TECHNICAL DEPTH →", W / 2, H - 10 * sc);
     ctx.save();
-    ctx.translate(16 * sc, H / 2);
+    ctx.translate(20 * sc, H / 2);
     ctx.rotate(-Math.PI / 2);
     ctx.fillText("← CREATIVE AMBITION", 0, 0);
     ctx.restore();
@@ -162,10 +172,36 @@
           }
         }
       });
+
+    /* Highlight ring for ?q= param */
+    if (highlighted) {
+      const { cx, cy } = plotCoords(highlighted.x, highlighted.y, W, H);
+      const r = radius(highlighted.cao_points, sc) + 10 * sc;
+      ctx.beginPath();
+      ctx.arc(cx, cy, r, 0, Math.PI * 2);
+      ctx.strokeStyle = token("--color-accent");
+      ctx.lineWidth   = 2.5 * sc;
+      ctx.stroke();
+    }
   }
 
   draw();
   new ResizeObserver(() => draw()).observe(canvas);
+
+  /* Redraw when the theme toggle changes data-theme on <html> */
+  new MutationObserver(draw).observe(document.documentElement, {
+    attributes: true, attributeFilter: ["data-theme"],
+  });
+
+  // Auto-expand the table row for the highlighted programme
+  if (highlighted) {
+    const rowId = 'row-' + highlighted.name.replace(/[^a-z0-9]/gi, '-').toLowerCase();
+    const row   = document.getElementById(rowId);
+    if (row) {
+      row.scrollIntoView({ behavior: 'smooth', block: 'center' });
+      toggleRow(row);
+    }
+  }
 
   /* ── Row expand/collapse ── */
   function toggleRow(row) {
@@ -214,6 +250,8 @@
     const d    = findHovered(e.clientX - rect.left, e.clientY - rect.top);
 
     if (d) {
+      const compareKey  = encodeURIComponent(d.cao_code || d.type);
+      const compareHref = `05-compare.html?show=${compareKey}`;
       tooltip.innerHTML = `
         <p class="tooltip__name">${d.name}</p>
         <p class="tooltip__inst">${d.institution_full}</p>
@@ -223,6 +261,7 @@
         </p>
         ${d.cao_points ? `<p class="tooltip__cao">CAO points: ${d.cao_points}</p>` : ""}
         <p class="tooltip__hint">↓ click row to see modules</p>
+        <a class="tooltip__compare" href="${compareHref}">Compare year by year ↗</a>
       `;
       tooltip.setAttribute("aria-hidden", "false");
 
@@ -376,7 +415,7 @@
           ${isPlaceholder ? '' : 'aria-expanded="false"'}
         >
           <td class="prog-cell prog-cell--name">
-            <span class="prog-summary__name">${d.name}</span>
+            <span class="prog-summary__name"><span class="prog-summary__text">${d.name}</span></span>
           </td>
           <td class="prog-cell prog-cell--inst">${d.institution}</td>
           <td class="prog-cell prog-cell--cao">${d.cao_points ?? "–"}</td>

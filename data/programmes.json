@@ -1706,8 +1706,43 @@
     "y": 8,
     "type": "proposed",
     "note": "Target position: genuine programming depth comparable to TU-level computing, combined with IADT design DNA. No other Irish degree currently occupies this space.",
-    "modules": [],
-    "modules_note": "Programme not yet designed.",
+    "modules": {
+      "year_1": [
+        "Digital Media + Web Design",
+        "Programming",
+        "Web Development",
+        "Databases",
+        "Integrated Project",
+        "Computing Concepts"
+      ],
+      "year_2": [
+        "UX + Interaction Design",
+        "Creative Coding",
+        "Advanced Web Development",
+        "Web Design Frameworks",
+        "Software Project",
+        "Architecture + OS"
+      ],
+      "year_3": [
+        "Data Visualisation",
+        "Physical Interaction",
+        "XR + Interactive Graphics",
+        "Front-End Development",
+        "Back-End Development",
+        "Mobile Computing",
+        "Networks + Cloud Computing",
+        "DevOps",
+        "Business + Entrepreneurship",
+        "Placement"
+      ],
+      "year_4": [
+        "Research + Analytics",
+        "Major Project",
+        "Professional Development",
+        "On Show Exhibition"
+      ]
+    },
+    "modules_note": "Sprint-based structure. Year 3 shows both streams combined.",
     "work_placement": true,
     "programme_url": ""
   }

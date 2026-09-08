@@ -38,4 +38,12 @@
 
   /* Set initial button state to match actual theme */
   syncButtons();
+
+  /* Mark the active nav link based on the current filename */
+  var filename = location.pathname.split('/').pop() || 'index.html';
+  document.querySelectorAll('.site-nav__link').forEach(function (a) {
+    if (a.getAttribute('href') === filename) {
+      a.setAttribute('aria-current', 'page');
+    }
+  });
 })();

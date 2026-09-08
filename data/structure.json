@@ -1,0 +1,424 @@
+{
+  "years": [
+    {
+      "number": 1,
+      "theme": "Making things",
+      "subtitle": "No streams. Everyone together.",
+      "items": [
+        { "type": "semester", "label": "Semester 1" },
+        {
+          "type": "sprint", "number": 1, "name": "Your Profile",
+          "tagline": "Design and build a personal profile page in Figma and HTML/CSS",
+          "module": "Digital Media Prototyping + Web Design",
+          "tags": ["html", "css", "figma", "typography", "responsive"],
+          "build": "A personal profile page — designed in Figma, built in HTML and CSS, live on the web",
+          "parts": [
+            "Figma designs for desktop and mobile",
+            "HTML and CSS build from scratch — no frameworks",
+            "Responsive layout that works on any screen",
+            "A deliberate typography and colour system",
+            "Deployed to a public URL"
+          ],
+          "constraint": "No default fonts. No templates. Typography and colour must be a conscious decision you can explain."
+        },
+        {
+          "type": "sprint", "number": 2, "name": "The Brief",
+          "tagline": "Build a responsive site for a real client brief",
+          "module": "Digital Media Prototyping + Web Design",
+          "tags": ["html", "css", "responsive", "client", "process"],
+          "build": "A responsive website built to a real brief from a real person outside the course",
+          "parts": [
+            "Client kickoff meeting and written brief",
+            "Wireframes and prototype in Figma",
+            "HTML and CSS build with real content",
+            "Responsive across mobile and desktop",
+            "Delivered and handed over to the client"
+          ],
+          "constraint": "The client is real. The content is theirs. You are solving their problem, not making a portfolio piece."
+        },
+        {
+          "type": "sprint", "number": 3, "name": "Game On",
+          "tagline": "Build a working browser game from scratch",
+          "module": "Programming",
+          "tags": ["javascript", "dom", "interaction", "animation"],
+          "build": "A working browser game built entirely in vanilla JavaScript",
+          "parts": [
+            "Game loop and state machine",
+            "DOM manipulation for rendering",
+            "Collision detection or equivalent game logic",
+            "Score system and player feedback",
+            "Start screen and game-over state"
+          ],
+          "constraint": "A stranger must be able to pick it up and play it without any instructions from you."
+        },
+        { "type": "break", "label": "Autumn break" },
+        { "type": "semester", "label": "Semester 2" },
+        {
+          "type": "sprint", "number": 4, "name": "Level Up",
+          "tagline": "Add UI, interaction and sound to your game",
+          "module": "Programming",
+          "tags": ["javascript", "ui", "events", "audio"],
+          "build": "Your Sprint 3 game — refactored, extended with UI, audio, and persistent scores",
+          "parts": [
+            "Refactored codebase — no spaghetti code",
+            "Start menu and settings screen",
+            "Sound effects and music via the Web Audio API",
+            "High scores saved with localStorage",
+            "Visual polish — transitions and feedback animation"
+          ],
+          "constraint": "Sprint 3 code must be refactored, not just extended. You must be able to explain every line."
+        },
+        {
+          "type": "sprint", "number": 5, "name": "Live Data",
+          "tagline": "Build a web app that reads and writes to a real database",
+          "module": "Web Development + Databases",
+          "tags": ["databases", "sql", "crud", "web-dev"],
+          "build": "A web application that reads and writes to a live database",
+          "parts": [
+            "SQL database with at least two related tables",
+            "Full CRUD — create, read, update, delete",
+            "Web interface with forms and validation",
+            "Server-side logic handling the data",
+            "Deployed and accessible by URL"
+          ],
+          "constraint": "Real data. Real operations. A stranger must be able to use it without guidance."
+        },
+        {
+          "type": "sprint", "number": 6, "name": "Ship It",
+          "tagline": "Integrated Project — a full digital product combining all Year 1 skills",
+          "module": "Integrated Project",
+          "tags": ["html", "css", "javascript", "databases", "project"],
+          "build": "An integrated digital product combining design, code and data — demonstrated live in a crit",
+          "parts": [
+            "Product brief and concept statement",
+            "Design in Figma and build in HTML, CSS, JavaScript",
+            "Working database integration",
+            "Deployed live and accessible by URL",
+            "5-minute crit presentation to an external reviewer"
+          ],
+          "constraint": "You present to someone outside the class. Not a link submission — a live demonstration in front of people."
+        },
+        { "type": "break", "label": "Christmas break" }
+      ]
+    },
+    {
+      "number": 2,
+      "theme": "Understanding things",
+      "subtitle": "Streams hinted at. Depth increases.",
+      "items": [
+        { "type": "semester", "label": "Semester 1" },
+        {
+          "type": "sprint", "number": 7, "name": "Fix It",
+          "tagline": "UX-research an existing product and design a better version",
+          "module": "UX + Interaction Design",
+          "tags": ["ux", "research", "figma", "heuristics", "usability"],
+          "build": "A redesign of an existing digital product, backed by UX research and user testing",
+          "parts": [
+            "Heuristic evaluation of the original product",
+            "3+ user interviews with documented findings",
+            "Affinity diagram and key insights",
+            "Figma prototype of the redesign",
+            "Usability test of the prototype with real users"
+          ],
+          "constraint": "Every design decision must trace back to a finding. Opinion without evidence is not accepted."
+        },
+        {
+          "type": "sprint", "number": 8, "name": "Test Your Assumptions",
+          "tagline": "Prototype and test with real users — then do it again",
+          "module": "UX + Interaction Design",
+          "tags": ["prototyping", "user-testing", "iteration", "accessibility"],
+          "build": "A prototype designed, tested with users, and then significantly changed based on what you learned",
+          "parts": [
+            "Low-fidelity prototype (paper or Figma)",
+            "User test session — recorded or documented",
+            "Analysis of what failed and why",
+            "Revised prototype with changes clearly documented",
+            "Before/after comparison with justification"
+          ],
+          "constraint": "Something must change as a result of testing. 'It tested fine' is not a finding."
+        },
+        {
+          "type": "sprint", "number": 9, "name": "Code as Medium",
+          "tagline": "A creative coding experiment — generative, interactive or data-driven",
+          "module": "Creative Coding",
+          "tags": ["creative-coding", "p5js", "generative", "canvas"],
+          "build": "A creative coding piece — generative, interactive, or data-driven — where the code is the design",
+          "parts": [
+            "Concept statement — what it does and why",
+            "p5.js, Canvas API, or equivalent",
+            "Responds to input — mouse, keyboard, touch, or live data",
+            "Live demo or recorded performance",
+            "Short written reflection on intention and outcome"
+          ],
+          "constraint": "Not a website about something. A thing in itself. It must do something when you interact with it."
+        },
+        { "type": "break", "label": "Autumn break" },
+        { "type": "semester", "label": "Semester 2" },
+        {
+          "type": "sprint", "number": 10, "name": "Real App",
+          "tagline": "An advanced web application pulling from a live API",
+          "module": "Advanced Web Development",
+          "tags": ["javascript", "api", "async", "fetch", "data"],
+          "build": "A web application that integrates a real external API and handles live data gracefully",
+          "parts": [
+            "API integration with authentication where required",
+            "Async JavaScript — fetch, promises, or async/await",
+            "UI designed around the shape of the data",
+            "Error handling for API failures and empty states",
+            "Deployed and accessible"
+          ],
+          "constraint": "Must handle real-world conditions: slow connections, empty results, API errors. All of these must fail gracefully."
+        },
+        {
+          "type": "sprint", "number": 11, "name": "Pick a Stack",
+          "tagline": "Build a site or app with a modern framework of your choice",
+          "module": "Web Design Frameworks",
+          "tags": ["react", "svelte", "components", "state", "build-tools"],
+          "build": "A site or app built with a modern JavaScript framework — chosen and justified by you",
+          "parts": [
+            "Written framework choice with justification",
+            "Component-based architecture",
+            "State management",
+            "Build pipeline and deployment",
+            "README with setup instructions for another developer"
+          ],
+          "constraint": "You chose the framework. You own the decision. You must be able to explain why it was right for this project."
+        },
+        {
+          "type": "sprint", "number": 12, "name": "The Full Build",
+          "tagline": "Software Project — a complex system built end-to-end with a team",
+          "module": "Software Project",
+          "tags": ["full-stack", "architecture", "teamwork", "git", "deployment"],
+          "build": "A complex full-stack system designed and built by a team, from architecture to deployment",
+          "parts": [
+            "Architecture diagram agreed by the team before a line is written",
+            "Git workflow — branches, pull requests, code review",
+            "Front end, back end, and database all connected",
+            "Technical documentation",
+            "Team retrospective and individual contribution log"
+          ],
+          "constraint": "Real team. Real roles. Real codebase. Every team member must have commits in the repository."
+        },
+        { "type": "break", "label": "Christmas break" }
+      ]
+    },
+    {
+      "number": 3,
+      "theme": "Choosing a direction",
+      "subtitle": "Streams split. Real work. Placement.",
+      "streams": [
+        {
+          "id": "frontend",
+          "name": "Frontend + Experience",
+          "items": [
+            { "type": "semester", "label": "Semester 1" },
+            {
+              "type": "sprint", "number": 13, "name": "Data Made Visible",
+              "tagline": "A complex, interactive data visualisation with a real dataset",
+              "module": "Data Visualisation",
+              "tags": ["d3", "svg", "data", "interaction", "storytelling"],
+              "build": "A complex interactive data visualisation built from a real dataset of at least 1,000 rows",
+              "parts": [
+                "Dataset sourced, cleaned, and documented",
+                "D3.js, Observable, or equivalent",
+                "At least two linked views or interaction types",
+                "Annotations and text that explain what the data shows",
+                "Written methodology: what the story is and how you chose to tell it"
+              ],
+              "constraint": "The data must be real. The story must be verifiable. Every design decision must be documented."
+            },
+            {
+              "type": "sprint", "number": 14, "name": "Touch the Physical",
+              "tagline": "A project using sensors, hardware and real-world interaction",
+              "module": "Physical Interaction",
+              "tags": ["arduino", "sensors", "physical-computing", "iot"],
+              "build": "A project where software and hardware meet — sensors, microcontrollers, and a real interaction",
+              "parts": [
+                "Arduino or Raspberry Pi circuit with sensors or actuators",
+                "Data pipeline from hardware to web interface",
+                "Physical enclosure or installation",
+                "User testing in the physical space",
+                "Circuit diagram and code documentation"
+              ],
+              "constraint": "A real person must be able to use it without you explaining it to them."
+            },
+            {
+              "type": "sprint", "number": 15, "name": "Make Space",
+              "tagline": "An immersive or spatial experience — XR, installation or generative",
+              "module": "Interactive Graphics / VR+AR",
+              "tags": ["webxr", "spatial", "three-js", "generative", "immersive"],
+              "build": "An immersive or spatial experience — XR, 3D environment, or physical installation",
+              "parts": [
+                "Three.js, WebXR, or a physical installation",
+                "Spatial layout and navigation design",
+                "At least one interactive element",
+                "User journey mapped and tested",
+                "Exhibition setup and documentation"
+              ],
+              "constraint": "It must be experienced in space, not just viewed on a screen."
+            },
+            {
+              "type": "sprint", "number": 16, "name": "The System",
+              "tagline": "A production-quality component library or design system",
+              "module": "Front-End Development",
+              "tags": ["design-system", "components", "tokens", "accessibility", "docs"],
+              "build": "A production-quality design system with components, tokens, and complete documentation",
+              "parts": [
+                "Design tokens — colour, typography, spacing",
+                "20+ components with documented variants",
+                "Accessibility audit — WCAG AA minimum",
+                "Live component documentation (Storybook or equivalent)",
+                "Getting-started guide for another developer"
+              ],
+              "constraint": "Another developer must be able to integrate it into a new project without asking you a single question."
+            },
+            { "type": "break", "label": "Autumn break" },
+            { "type": "semester", "label": "Semester 2 — Placement" },
+            { "type": "placement", "label": "20 ECTS. Sprint portfolio continues." }
+          ]
+        },
+        {
+          "id": "backend",
+          "name": "Backend + Systems",
+          "items": [
+            { "type": "semester", "label": "Semester 1" },
+            {
+              "type": "sprint", "number": 13, "name": "Full Stack",
+              "tagline": "A full-stack application with real architecture decisions",
+              "module": "Back-End Development",
+              "tags": ["node", "express", "databases", "rest", "architecture"],
+              "build": "A full-stack application built with deliberate architecture decisions and documented reasoning",
+              "parts": [
+                "Architecture Decision Record (ADR) document written before building",
+                "REST or GraphQL API with OpenAPI spec",
+                "Database schema with migrations",
+                "Front end consuming your own API",
+                "Deployment with dev and production environments separated"
+              ],
+              "constraint": "Every major technical decision must be documented. The architecture must be something you can stand in front of and defend."
+            },
+            {
+              "type": "sprint", "number": 14, "name": "Go Mobile",
+              "tagline": "A mobile application with real users",
+              "module": "Mobile Computing",
+              "tags": ["react-native", "mobile", "ux", "push-notifications"],
+              "build": "A mobile application tested with at least 5 real users who have it installed on their phone",
+              "parts": [
+                "React Native or equivalent cross-platform build",
+                "At least one native feature — camera, notifications, or location",
+                "App Store or Play Store draft listing with screenshots",
+                "5 real user test sessions with documented findings",
+                "Iteration on the app based on feedback"
+              ],
+              "constraint": "Five real users must have it installed on their phone. Screenshots of this are part of the submission."
+            },
+            {
+              "type": "sprint", "number": 15, "name": "Own the API",
+              "tagline": "A back-end system with API design, security and scalability",
+              "module": "Networks + Cloud Computing",
+              "tags": ["api", "rest", "auth", "security", "scaling"],
+              "build": "A back-end system with authentication, rate limiting, and documentation built for third-party use",
+              "parts": [
+                "OpenAPI specification written before the code",
+                "JWT or OAuth2 authentication",
+                "Role-based authorisation",
+                "Rate limiting and structured error responses",
+                "Integration test suite",
+                "Postman collection or equivalent for testing"
+              ],
+              "constraint": "A developer who has never spoken to you must be able to integrate your API using only the documentation."
+            },
+            {
+              "type": "sprint", "number": 16, "name": "Ship to Production",
+              "tagline": "A DevOps pipeline — CI/CD, deployment, monitoring",
+              "module": "DevOps",
+              "tags": ["docker", "ci-cd", "github-actions", "monitoring", "linux"],
+              "build": "A complete CI/CD pipeline — automated testing, deployment, monitoring, and incident response",
+              "parts": [
+                "GitHub Actions or equivalent CI/CD workflows",
+                "Automated test suite — unit and integration",
+                "Docker containerisation",
+                "Cloud deployment with secrets managed securely",
+                "Monitoring dashboard and alerting",
+                "Runbook: what to do when it breaks at 2am"
+              ],
+              "constraint": "Merging to main must trigger an automatic deployment. Nothing is manual."
+            },
+            { "type": "break", "label": "Autumn break" },
+            { "type": "semester", "label": "Semester 2 — Placement" },
+            { "type": "placement", "label": "20 ECTS. Sprint portfolio continues." }
+          ]
+        }
+      ]
+    },
+    {
+      "number": 4,
+      "theme": "Mastery",
+      "subtitle": "Streams converge on the Major Project.",
+      "items": [
+        { "type": "semester", "label": "Semester 1" },
+        {
+          "type": "sprint", "number": 17, "name": "Define the Problem",
+          "tagline": "Research phase — problem definition, literature review, methodology",
+          "module": "Research + Analytics",
+          "tags": ["research", "methodology", "writing", "ethics", "planning"],
+          "build": "A research proposal that precisely defines the problem you will spend Year 4 solving",
+          "parts": [
+            "Literature review — minimum 10 sources",
+            "Problem statement of no more than 200 words",
+            "Methodology choice with written justification",
+            "Ethics review or statement",
+            "Project plan with milestones through to Sprint 20"
+          ],
+          "constraint": "'AI and creativity' is not a problem. 'How generative image tools change the client brief process in small agencies' is. The problem must be specific enough to solve in two semesters."
+        },
+        {
+          "type": "sprint", "number": 18, "name": "First Version",
+          "tagline": "A working prototype tested with real users or stakeholders",
+          "module": "Major Project",
+          "tags": ["prototyping", "user-testing", "feedback", "iteration"],
+          "build": "A working prototype — not a Figma mockup — tested with real people outside the course",
+          "parts": [
+            "Functional prototype in code",
+            "3+ user test sessions with people outside IADT",
+            "Analysis report: what worked, what failed, what changes",
+            "Version 2 plan based on findings",
+            "Progress presentation to supervisor"
+          ],
+          "constraint": "Must be tested with people who are not on this course and do not know you personally."
+        },
+        { "type": "semester", "label": "Semester 2" },
+        {
+          "type": "sprint", "number": 19, "name": "Better",
+          "tagline": "A refined, production-quality version based on honest critique",
+          "module": "Major Project",
+          "tags": ["refinement", "quality", "polish", "documentation"],
+          "build": "A refined, production-quality version of your project — improved in ways you can prove",
+          "parts": [
+            "Documented changes from Sprint 18 with justification",
+            "Performance and accessibility improvements with evidence",
+            "Updated technical documentation",
+            "Final presentation drafted and rehearsed",
+            "Exhibition installation tested and ready"
+          ],
+          "constraint": "Every change must trace back to a Sprint 18 finding or a measurable improvement. 'I just thought it would be better' is not evidence."
+        },
+        {
+          "type": "sprint", "number": 20, "name": "On Show",
+          "tagline": "Final submission, public exhibition and crit — the sprint model's endpoint",
+          "module": "Major Project + Professional Development",
+          "tags": ["exhibition", "presentation", "portfolio", "public"],
+          "build": "The finished project — submitted, exhibited publicly, and defended in front of an external panel",
+          "parts": [
+            "Final code and documentation submitted",
+            "Public exhibition — physical installation or live demo at On Show",
+            "5-minute crit presentation to an external panel",
+            "Written reflection: what you made, why, and what you would do differently",
+            "Sprint portfolio: four years of documented work as evidence of development"
+          ],
+          "constraint": "Anyone walking in off the street should be able to understand what you made and why you made it."
+        }
+      ]
+    }
+  ]
+}
